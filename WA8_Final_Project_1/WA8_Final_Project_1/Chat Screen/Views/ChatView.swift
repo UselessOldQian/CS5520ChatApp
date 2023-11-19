@@ -33,7 +33,9 @@ class ChatView: UIView {
     
     func setupTextFieldMessage() {
         textFieldMessage = UITextField()
-        textFieldMessage.borderStyle = .roundedRect
+        textFieldMessage.borderStyle = .none
+        textFieldMessage.layer.borderWidth = 0.4
+        textFieldMessage.layer.cornerRadius = 5
         textFieldMessage.autocapitalizationType = .none
         textFieldMessage.translatesAutoresizingMaskIntoConstraints = false
         textFieldMessage.textContentType = .oneTimeCode
