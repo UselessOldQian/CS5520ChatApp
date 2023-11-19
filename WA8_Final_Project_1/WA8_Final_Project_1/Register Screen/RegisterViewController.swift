@@ -26,7 +26,6 @@ class RegisterViewController: UIViewController {
     }
     
     @objc func onRegisterTapped(){
-        //MARK: creating a new user on Firebase...
         registerNewAccount()
     }
 }
