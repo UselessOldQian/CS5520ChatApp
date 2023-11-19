@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     let mainScreen = MainScreenView()
     
     var messageList = [Message]()
-    
+
+    var chats = [Chat]()
+
     var handleAuth: AuthStateDidChangeListenerHandle?
     
     var currentUser:FirebaseAuth.User?
@@ -72,8 +74,15 @@ class ViewController: UIViewController {
         title = "My Messages"
         
         //MARK: patching table view delegate and data source...
-//        mainScreen.tableViewContacts.delegate = self
-//        mainScreen.tableViewContacts.dataSource = self
+        mainScreen.tableViewChats.delegate = self
+        mainScreen.tableViewChats.dataSource = self
+        
+        self.chats.append(Chat(userId: "user001", text: "Hello there!", _id: "chat001"))
+        self.chats.append(Chat(userId: "user002", text: "How's it going?", _id: "chat002"))
+        self.chats.append(Chat(userId: "user003", text: "Swift is awesome!", _id: "chat003"))
+        
+        print(chats)
+        mainScreen.tableViewChats.reloadData()
         
         //MARK: removing the separator line...
 //        mainScreen.tableViewContacts.separatorStyle = .none

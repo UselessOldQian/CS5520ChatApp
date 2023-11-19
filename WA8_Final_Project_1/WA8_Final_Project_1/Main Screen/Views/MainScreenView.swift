@@ -11,7 +11,7 @@ class MainScreenView: UIView {
     var profilePic: UIImageView!
     var labelText: UILabel!
     var floatingButtonAddMessage: UIButton!
-    var tableViewContacts: UITableView!
+    var tableViewChats: UITableView!
     
     var testButton: UIButton!
     var testLabel: UILabel!
@@ -23,9 +23,10 @@ class MainScreenView: UIView {
         setupProfilePic()
         setupLabelText()
         setupFloatingButtonAddContact()
+        setupTableViewChats()
         
         testSetupBtn()
-        testSetupLabel()
+//        testSetupLabel()
         
         initConstraints()
     }
@@ -78,6 +79,13 @@ class MainScreenView: UIView {
     func setupTableViewMessages(){
     }
     
+    func setupTableViewChats(){
+        tableViewChats = UITableView()
+        tableViewChats.register(ChatsTableViewCell.self, forCellReuseIdentifier: Configs.tableViewChatsID)
+        tableViewChats.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(tableViewChats)
+    }
+    
     func setupFloatingButtonAddContact(){
         floatingButtonAddMessage = UIButton(type: .system)
         floatingButtonAddMessage.setTitle("", for: .normal)
@@ -106,11 +114,11 @@ class MainScreenView: UIView {
             labelText.topAnchor.constraint(equalTo: profilePic.topAnchor),
             labelText.bottomAnchor.constraint(equalTo: profilePic.bottomAnchor),
             labelText.leadingAnchor.constraint(equalTo: profilePic.trailingAnchor, constant: 8),
-//            
-//            tableViewContacts.topAnchor.constraint(equalTo: profilePic.bottomAnchor, constant: 8),
-//            tableViewContacts.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -8),
-//            tableViewContacts.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-//            tableViewContacts.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            
+            tableViewChats.topAnchor.constraint(equalTo: profilePic.bottomAnchor, constant: 8),
+            tableViewChats.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -8),
+            tableViewChats.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            tableViewChats.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
             floatingButtonAddMessage.widthAnchor.constraint(equalToConstant: 60),
             floatingButtonAddMessage.heightAnchor.constraint(equalToConstant: 60),
