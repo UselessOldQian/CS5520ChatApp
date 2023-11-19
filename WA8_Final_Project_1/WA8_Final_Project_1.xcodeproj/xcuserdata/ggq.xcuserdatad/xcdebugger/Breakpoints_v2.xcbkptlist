@@ -14,8 +14,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
             <Locations>
@@ -176,6 +176,166 @@
                   startingLineNumber = "110"
                   endingLineNumber = "110"
                   offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "138D061E-01F6-4940-B414-E890255D1E62"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "fetchUserDocumentIDs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCA5922D-A438-49E9-98DC-3C610A5FEA87"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchUserDocumentIDs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9C07876-ED82-4301-A853-58560C673A1D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchUserDocumentIDs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "041C38BB-B437-48C5-A1F4-25BCB597399A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Main Screen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchUserDocumentIDs()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "041C38BB-B437-48C5-A1F4-25BCB597399A - 129d9c7292a79e76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WA8_Final_Project_1.ViewController.fetchUserDocumentIDs() -&gt; ()"
+                  moduleName = "WA8_Final_Project_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Main%20Screen/UserFirebaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1414">
+               </Location>
+               <Location
+                  uuid = "041C38BB-B437-48C5-A1F4-25BCB597399A - 129d9c7292a79e76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WA8_Final_Project_1.ViewController.fetchUserDocumentIDs() -&gt; ()"
+                  moduleName = "WA8_Final_Project_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Main%20Screen/UserFirebaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1483">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "786089E4-3E62-4A29-8E33-3C2B6FA1B28C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Main Screen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchUserDocumentIDs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "337F4DC5-058B-4C33-AA26-BD9041EEA4AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/FriendsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "337F4DC5-058B-4C33-AA26-BD9041EEA4AB - 551698501e863a5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WA8_Final_Project_1.FriendsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "WA8_Final_Project_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Friends%20Secreen/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "247">
+               </Location>
+               <Location
+                  uuid = "337F4DC5-058B-4C33-AA26-BD9041EEA4AB - 551698501e863a5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WA8_Final_Project_1.FriendsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "WA8_Final_Project_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Friends%20Secreen/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "511">
                </Location>
             </Locations>
          </BreakpointContent>

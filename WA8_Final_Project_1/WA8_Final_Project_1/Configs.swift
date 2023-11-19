@@ -10,4 +10,5 @@ import Foundation
 class Configs {
     static let tableViewMessID = "tableViewMessID"
     static let tableViewChatsID = "tableViewChatsID"
+    static let tableViewFriendsID = "tableViewFriendsID"
 }

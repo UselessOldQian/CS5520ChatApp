@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     
     var currentUser:FirebaseAuth.User?
     
+    let friendsScreen = FriendsViewController()
+    
     let database = Firestore.firestore()
     
     override func loadView() {
@@ -109,9 +111,8 @@ class ViewController: UIViewController {
     }
     
     @objc func addContactButtonTapped(){
-//        let addContactController = AddContactViewController()
-//        addContactController.currentUser = self.currentUser
-//        navigationController?.pushViewController(addContactController, animated: true)
+//        fetchUserDocumentIDs()
+        navigationController?.pushViewController(friendsScreen, animated: true)
     }
     
     @objc func testButtonTapped() {
