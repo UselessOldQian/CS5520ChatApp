@@ -56,6 +56,7 @@ class FriendsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+//        self.navigationController?.popViewController(animated: true)
     }
     
     func initConstraints() {

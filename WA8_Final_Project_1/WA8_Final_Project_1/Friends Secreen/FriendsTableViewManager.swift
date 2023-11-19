@@ -17,4 +17,11 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
         cell.labelName.text = friends[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Pop to MainScreen
+        navigationController?.popViewController(animated: true)
+        let chatViewController = ChatViewController()
+        navigationController?.pushViewController(chatViewController, animated: true)
+    }
 }
