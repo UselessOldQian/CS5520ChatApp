@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503B52832B05CB420010390B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52822B05CB420010390B /* Message.swift */; };
+		503B52A12B08211F0010390B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52A02B08211F0010390B /* ChatViewController.swift */; };
+		503B52A42B0821390010390B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52A32B0821390010390B /* ChatView.swift */; };
+		503B52AD2B08514C0010390B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52AC2B08514C0010390B /* Validation.swift */; };
+		503B52AF2B08812E0010390B /* MessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52AE2B08812E0010390B /* MessTableViewCell.swift */; };
+		503B52B12B08814B0010390B /* MessTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52B02B08814B0010390B /* MessTableViewManager.swift */; };
+		503B52B32B0881E40010390B /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52B22B0881E40010390B /* Configs.swift */; };
 		BD0ADFFC2B04904200BD63B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */; };
 		BD0ADFFE2B04904200BD63B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */; };
 		BD0AE0002B04904200BD63B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFF2B04904200BD63B8 /* ViewController.swift */; };
@@ -42,7 +49,6 @@
 		BD0AE0452B04944200BD63B8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BD0AE0442B04944200BD63B8 /* FirebaseStorage */; };
 		BD0AE0472B04944200BD63B8 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BD0AE0462B04944200BD63B8 /* FirebaseStorageCombine-Community */; };
 		BD0AE04B2B04964F00BD63B8 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE04A2B04964F00BD63B8 /* MainScreenView.swift */; };
-		BD0AE04E2B049ACC00BD63B8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE04D2B049ACC00BD63B8 /* Message.swift */; };
 		BD0AE0502B049BEA00BD63B8 /* RightBarButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE04F2B049BEA00BD63B8 /* RightBarButtonManager.swift */; };
 		BD0AE0522B049C7A00BD63B8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE0512B049C7A00BD63B8 /* RegisterView.swift */; };
 		BD0AE0542B049C8C00BD63B8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE0532B049C8C00BD63B8 /* RegisterViewController.swift */; };
@@ -53,6 +59,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		503B52822B05CB420010390B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		503B52A02B08211F0010390B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		503B52A32B0821390010390B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		503B52AC2B08514C0010390B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		503B52AE2B08812E0010390B /* MessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessTableViewCell.swift; sourceTree = "<group>"; };
+		503B52B02B08814B0010390B /* MessTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessTableViewManager.swift; sourceTree = "<group>"; };
+		503B52B22B0881E40010390B /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		BD0ADFF82B04904200BD63B8 /* WA8_Final_Project_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA8_Final_Project_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +76,6 @@
 		BD0AE0092B04904400BD63B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD0AE00F2B04938000BD63B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BD0AE04A2B04964F00BD63B8 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
-		BD0AE04D2B049ACC00BD63B8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = ../../../../../../../../../Desktop/Message.swift; sourceTree = "<group>"; };
 		BD0AE04F2B049BEA00BD63B8 /* RightBarButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonManager.swift; sourceTree = "<group>"; };
 		BD0AE0512B049C7A00BD63B8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		BD0AE0532B049C8C00BD63B8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +123,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503B52842B05CB4B0010390B /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				503B52822B05CB420010390B /* Message.swift */,
+				503B52AC2B08514C0010390B /* Validation.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		503B52A22B08212C0010390B /* Chat Screen */ = {
+			isa = PBXGroup;
+			children = (
+				503B52A02B08211F0010390B /* ChatViewController.swift */,
+				503B52A52B0821A10010390B /* Views */,
+			);
+			path = "Chat Screen";
+			sourceTree = "<group>";
+		};
+		503B52A52B0821A10010390B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				503B52A32B0821390010390B /* ChatView.swift */,
+				503B52AE2B08812E0010390B /* MessTableViewCell.swift */,
+				503B52B02B08814B0010390B /* MessTableViewManager.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BD0ADFEF2B04904200BD63B8 = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +170,11 @@
 		BD0ADFFA2B04904200BD63B8 /* WA8_Final_Project_1 */ = {
 			isa = PBXGroup;
 			children = (
+				503B52842B05CB4B0010390B /* Data Models */,
 				BD0AE0552B049CF700BD63B8 /* Progress Indicator */,
-				BD0AE04C2B049AAB00BD63B8 /* Data Models */,
-				BD0AE0492B04960300BD63B8 /* Register Screen */,
 				BD0AE0482B0495EC00BD63B8 /* Main Screen */,
+				BD0AE0492B04960300BD63B8 /* Register Screen */,
+				503B52A22B08212C0010390B /* Chat Screen */,
 				BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */,
 				BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */,
 				BD0AE0012B04904200BD63B8 /* Main.storyboard */,
@@ -141,6 +182,7 @@
 				BD0AE0062B04904400BD63B8 /* LaunchScreen.storyboard */,
 				BD0AE0092B04904400BD63B8 /* Info.plist */,
 				BD0AE00F2B04938000BD63B8 /* GoogleService-Info.plist */,
+				503B52B22B0881E40010390B /* Configs.swift */,
 			);
 			path = WA8_Final_Project_1;
 			sourceTree = "<group>";
@@ -164,14 +206,6 @@
 				BD0AE05C2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift */,
 			);
 			path = "Register Screen";
-			sourceTree = "<group>";
-		};
-		BD0AE04C2B049AAB00BD63B8 /* Data Models */ = {
-			isa = PBXGroup;
-			children = (
-				BD0AE04D2B049ACC00BD63B8 /* Message.swift */,
-			);
-			path = "Data Models";
 			sourceTree = "<group>";
 		};
 		BD0AE0552B049CF700BD63B8 /* Progress Indicator */ = {
@@ -291,14 +325,20 @@
 				BD0AE04B2B04964F00BD63B8 /* MainScreenView.swift in Sources */,
 				BD0AE0002B04904200BD63B8 /* ViewController.swift in Sources */,
 				BD0AE05B2B049E0400BD63B8 /* RegisterFirebaseManager.swift in Sources */,
+				503B52B12B08814B0010390B /* MessTableViewManager.swift in Sources */,
+				503B52A42B0821390010390B /* ChatView.swift in Sources */,
+				503B52AD2B08514C0010390B /* Validation.swift in Sources */,
 				BD0AE0592B049D5400BD63B8 /* ProgressSpinnerViewController.swift in Sources */,
 				BD0AE0542B049C8C00BD63B8 /* RegisterViewController.swift in Sources */,
 				BD0AE0522B049C7A00BD63B8 /* RegisterView.swift in Sources */,
 				BD0AE05D2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift in Sources */,
-				BD0AE04E2B049ACC00BD63B8 /* Message.swift in Sources */,
+				503B52AF2B08812E0010390B /* MessTableViewCell.swift in Sources */,
 				BD0ADFFC2B04904200BD63B8 /* AppDelegate.swift in Sources */,
+				503B52A12B08211F0010390B /* ChatViewController.swift in Sources */,
+				503B52832B05CB420010390B /* Message.swift in Sources */,
 				BD0AE0572B049D2F00BD63B8 /* ProgressSpinnerDelegate.swift in Sources */,
 				BD0ADFFE2B04904200BD63B8 /* SceneDelegate.swift in Sources */,
+				503B52B32B0881E40010390B /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,6 +527,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

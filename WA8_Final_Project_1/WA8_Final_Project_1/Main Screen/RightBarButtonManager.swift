@@ -109,6 +109,7 @@ extension ViewController{
         Auth.auth().signIn(withEmail: email, password: password, completion: {(result, error) in
             if error == nil{
                 self.showAlert(with: "Success", message: "You are now logged in!")
+                Validation.defaults.set(email, forKey: "auth")
                 //MARK: can you hide the progress indicator here?
             }else{
                 //MARK: alert that no user found or password wrong...

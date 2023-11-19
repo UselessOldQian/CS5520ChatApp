@@ -13,6 +13,9 @@ class MainScreenView: UIView {
     var floatingButtonAddMessage: UIButton!
     var tableViewContacts: UITableView!
     
+    var testButton: UIButton!
+    var testLabel: UILabel!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .white
@@ -20,7 +23,38 @@ class MainScreenView: UIView {
         setupProfilePic()
         setupLabelText()
         setupFloatingButtonAddContact()
+        
+        testSetupBtn()
+        testSetupLabel()
+        
         initConstraints()
+    }
+    
+    func testSetupLabel() {
+        testLabel = UILabel()
+        testLabel.text = "new message here what are you doing right nowhaha do you want to have lunch!"
+        testLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        testLabel.numberOfLines = 0
+        testLabel.lineBreakMode = .byWordWrapping
+        testLabel.sizeToFit()
+        
+        testLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(testLabel)
+        
+        NSLayoutConstraint.activate([
+            testLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50),
+//            testLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 36),
+            testLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 10),
+            testLabel.widthAnchor.constraint(equalTo: self.safeAreaLayoutGuide.widthAnchor, constant: -10),
+            
+        ])
+    }
+    
+    func testSetupBtn() {
+        testButton = UIButton(type: .system)
+        testButton.setTitle("test chat screen", for: .normal)
+        testButton.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(testButton)
     }
     
     func setupProfilePic(){
@@ -82,6 +116,10 @@ class MainScreenView: UIView {
             floatingButtonAddMessage.heightAnchor.constraint(equalToConstant: 60),
             floatingButtonAddMessage.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -16),
             floatingButtonAddMessage.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            
+            
+            testButton.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            testButton.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor),
             
         ])
     }
