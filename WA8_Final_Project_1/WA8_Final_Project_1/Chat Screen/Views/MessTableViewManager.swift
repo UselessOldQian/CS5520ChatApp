@@ -15,6 +15,10 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Configs.tableViewMessID, for: indexPath) as! MessagesTableViewCell
         cell.labelMessage.text = messagesList[indexPath.row].message
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy HH:mm"
+        cell.labelTime.text = dateFormatter.string(from: messagesList[indexPath.row].time)
 //        print("LABELMESSAGE:")
 //        print(cell.labelMessage.text)
         if messagesList[indexPath.row].myself {
@@ -24,8 +28,8 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
         }
                 
         let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.clear
-        cell.selectedBackgroundView = backgroundView
+//        backgroundView.backgroundColor = UIColor.clear
+//        cell.selectedBackgroundView = backgroundView
         
         return cell
     }

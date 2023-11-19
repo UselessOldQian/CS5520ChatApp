@@ -8,16 +8,30 @@
 import UIKit
 
 class MessagesTableViewCell: UITableViewCell {
+    var labelTime: UILabel!
     var wrapperCellView: UIView!
     var labelMessage: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        setupLabelTime()
         setupWrapperCellView()
         setupLabelMessage()
         
         initConstraints()
+    }
+    
+    func setupLabelTime() {
+        labelTime = UILabel()
+        labelTime.textColor = UIColor.lightGray
+        labelTime.font = UIFont.systemFont(ofSize: 13)
+        labelTime.numberOfLines = 0
+        labelTime.lineBreakMode = .byWordWrapping
+        labelTime.sizeToFit()
+        
+        labelTime.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(labelTime)
     }
     
     func setupWrapperCellView() {
@@ -45,14 +59,16 @@ class MessagesTableViewCell: UITableViewCell {
     
     func initConstraints() {
         NSLayoutConstraint.activate([
-            wrapperCellView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            labelTime.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
+            
+            wrapperCellView.topAnchor.constraint(equalTo: labelTime.bottomAnchor, constant: 5),
             wrapperCellView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
 
             labelMessage.topAnchor.constraint(equalTo: wrapperCellView.topAnchor, constant: 10),
             labelMessage.bottomAnchor.constraint(equalTo: wrapperCellView.bottomAnchor, constant: -10),
             labelMessage.leadingAnchor.constraint(equalTo: wrapperCellView.leadingAnchor, constant: 10),
             labelMessage.trailingAnchor.constraint(equalTo: wrapperCellView.trailingAnchor, constant: -10),
-            labelMessage.widthAnchor.constraint(lessThanOrEqualTo: self.widthAnchor, constant: -100)
+            labelMessage.widthAnchor.constraint(lessThanOrEqualTo: self.widthAnchor, constant: -100),
         ])
     }
     
@@ -60,10 +76,12 @@ class MessagesTableViewCell: UITableViewCell {
         wrapperCellView.backgroundColor = UIColor(red: 0.29, green: 0.80, blue: 0.47, alpha: 1.0)
         
         NSLayoutConstraint.activate([
-            labelMessage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -18),
+            labelTime.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             
             wrapperCellView.widthAnchor.constraint(equalTo: labelMessage.widthAnchor, constant: 16),
             wrapperCellView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            
+            labelMessage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -18),
         ])
     }
     
@@ -71,10 +89,12 @@ class MessagesTableViewCell: UITableViewCell {
         wrapperCellView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
         
         NSLayoutConstraint.activate([
-            labelMessage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 18),
+            labelTime.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             
             wrapperCellView.widthAnchor.constraint(equalTo: labelMessage.widthAnchor, constant: 16),
             wrapperCellView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            
+            labelMessage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 18),
         ])
     }
     
