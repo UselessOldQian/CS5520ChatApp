@@ -59,32 +59,33 @@ class ChatViewController: UIViewController {
         messagesList.append(Message(message: "123123 123", myself: false, time: Date()))
         messagesList.append(Message(message: "lkdjfl", myself: true, time: Date()))
         messagesList.append(Message(message: "laskdjflksdj flskj lksjf klsjdf lksdj flksfj lksd jflksjd flksjfkljsdlkf jsldkfj lksdf lksdjf kldsj flkwiod uaiow jiwj ldijdlisj dilje lifjesl fjsleif lsiejf lisejf lisejf", myself: true, time: Date()))
-        messagesList.append(Message(message: "lskdfjdkfj kdfkdkdkd", myself: false, time: Date()))
+        messagesList.append(Message(message: "1", myself: false, time: Date()))
         messagesList.append(Message(message: "dklsfj lskdfj lksdjf ksldjf lksdj flkjsd flksjdlfk jsdlkfj ", myself: true, time: Date()))
         
-        chatScreen.tableViewMessages.reloadData()
         scrollToBottom()
-        
+//        chatScreen.tableViewMessages.reloadData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // remove the listener from the app so that we do not run the listener infinitely
-//        Auth.auth().removeStateDidChangeListener(handleAuth!)
     }
     
     func scrollToBottom() {
         let numberOfSections = chatScreen.tableViewMessages.numberOfSections
         let numberOfRows = chatScreen.tableViewMessages.numberOfRows(inSection: numberOfSections - 1)
-        print("numberOfSections:")
-        print(numberOfSections)
-        print("numberOfRows:")
-        print(numberOfRows)
         if numberOfRows > 0 {
             let indexPath = IndexPath(row: numberOfRows - 1, section: numberOfSections - 1)
-            print("indexPath:")
-            print(indexPath)
             chatScreen.tableViewMessages.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        }
+        
+        
+        DispatchQueue.main.async {
+            let numberOfSections = self.chatScreen.tableViewMessages.numberOfSections
+            let numberOfRows = self.chatScreen.tableViewMessages.numberOfRows(inSection: numberOfSections - 1)
+            if numberOfRows > 0 {
+                let indexPath = IndexPath(row: numberOfRows - 1, section: numberOfSections - 1)
+                self.chatScreen.tableViewMessages.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            }
         }
     }
     

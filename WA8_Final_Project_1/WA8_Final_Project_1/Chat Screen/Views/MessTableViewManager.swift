@@ -28,8 +28,8 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
         }
                 
         let backgroundView = UIView()
-//        backgroundView.backgroundColor = UIColor.clear
-//        cell.selectedBackgroundView = backgroundView
+        backgroundView.backgroundColor = UIColor.clear
+        cell.selectedBackgroundView = backgroundView
         
         return cell
     }

@@ -40,7 +40,7 @@ class MessagesTableViewCell: UITableViewCell {
         wrapperCellView.layer.cornerRadius = 4.0
         wrapperCellView.layer.shadowColor = UIColor.gray.cgColor
         wrapperCellView.layer.shadowOffset = .zero
-        wrapperCellView.layer.shadowRadius = 2.0
+        wrapperCellView.layer.shadowRadius = 1.0
         wrapperCellView.layer.shadowOpacity = 0.7
         wrapperCellView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(wrapperCellView)
@@ -61,7 +61,7 @@ class MessagesTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             labelTime.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
             
-            wrapperCellView.topAnchor.constraint(equalTo: labelTime.bottomAnchor, constant: 5),
+            wrapperCellView.topAnchor.constraint(equalTo: labelTime.bottomAnchor, constant: 2),
             wrapperCellView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
 
             labelMessage.topAnchor.constraint(equalTo: wrapperCellView.topAnchor, constant: 10),
@@ -87,13 +87,13 @@ class MessagesTableViewCell: UITableViewCell {
     
     func setOppoConstraint() {
         wrapperCellView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
-        
+
         NSLayoutConstraint.activate([
             labelTime.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            
+
             wrapperCellView.widthAnchor.constraint(equalTo: labelMessage.widthAnchor, constant: 16),
             wrapperCellView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            
+
             labelMessage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 18),
         ])
     }
