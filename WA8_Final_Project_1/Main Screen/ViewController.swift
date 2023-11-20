@@ -126,23 +126,72 @@ class ViewController: UIViewController {
             print("User not logged in or email not available")
             return
         }
+        
         let chatCollection = database.collection("users").document(userEmail).collection("chats")
-
+        var chatIDs:[String] = []
+        
         chatCollection.addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("No documents: \(error?.localizedDescription ?? "Unknown error")")
                 return
             }
-
-            self.chats = documents.compactMap { document -> Chat? in
-                try? document.data(as: Chat.self)
+            
+            chatIDs = documents.map { document in
+                return document.documentID
             }
+            
+            print("chatIDs:")
+            print(chatIDs)
+            
+            for id in chatIDs {
+                let chatDocument = self.database.collection("chats").document(id)
+                chatDocument.getDocument { (documentSnapshot, error) in
+                    if let error = error {
+                        print("Error fetching document: \(error.localizedDescription)")
+                    } else if let document = documentSnapshot, document.exists {
+                        // Access the data from the document
+                        if let chatData = document.data() {
+                            print("Chat Data: \(chatData)")
+                            
+                            // If your document data is expected to be a dictionary, you can access specific fields like this:
+                            if let friendName = chatData["friendName"] as? String,
+                               let friends = chatData["friends"] as? [String],
+                               let lastMessageID = chatData["lastMessageID"] as? String {
+                                print("friend name: \(friendName)")
+                                print("friends:  \(friends[0])  \(friends[1])")
+                                print("Last Message: \(lastMessageID)\n\n")
+                                
+                                self.chats.append(Chat(id: id, friends: friends, friendName: friendName, lastMessageID: lastMessageID))
+                                print("CHATS: \(self.chats)")
+                                
+                                
+                            } else {
+                                print("Error unwrapping variables")
+                            }
+                            
+                        }
+                        
+                        
+                        // You can do further processing with the retrieved data here
+                    } else {
+                        print("Document does not exist")
+                    }
+                }
+                
+            }
+            
+            
+            
+            
+        
+            
 
             DispatchQueue.main.async {
                 // Update your UI, e.g., reloading a table view
                 self.mainScreen.tableViewChats.reloadData()
             }
         }
+        
 //        self.chats.removeAll()
 //        let db = Firestore.firestore()
 //        let chatsCollection = db.collection("chats")
