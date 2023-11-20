@@ -7,25 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		503B52832B05CB420010390B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52822B05CB420010390B /* Message.swift */; };
-		503B52A12B08211F0010390B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52A02B08211F0010390B /* ChatViewController.swift */; };
-		503B52A42B0821390010390B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52A32B0821390010390B /* ChatView.swift */; };
-		503B52AD2B08514C0010390B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52AC2B08514C0010390B /* Validation.swift */; };
-		503B52AF2B08812E0010390B /* MessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52AE2B08812E0010390B /* MessTableViewCell.swift */; };
-		503B52B12B08814B0010390B /* MessTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52B02B08814B0010390B /* MessTableViewManager.swift */; };
 		503B52B32B0881E40010390B /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B52B22B0881E40010390B /* Configs.swift */; };
-		861087472B09C76D0042D9C9 /* ChatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861087462B09C76D0042D9C9 /* ChatsTableViewCell.swift */; };
-		861087492B09EA510042D9C9 /* ChatsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861087482B09EA510042D9C9 /* ChatsTableViewManager.swift */; };
-		8610874C2B09EAD70042D9C9 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610874B2B09EAD70042D9C9 /* Chat.swift */; };
-		86CD60742B0A07CE00469FB3 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD60732B0A07CE00469FB3 /* FriendsViewController.swift */; };
-		86CD60772B0A08E700469FB3 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD60762B0A08E700469FB3 /* FriendsView.swift */; };
-		86CD60792B0A0AA400469FB3 /* FriendsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD60782B0A0AA400469FB3 /* FriendsTableViewManager.swift */; };
-		86CD607B2B0A0D5800469FB3 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD607A2B0A0D5800469FB3 /* FriendsTableViewCell.swift */; };
-		86CD607D2B0A18F500469FB3 /* UserFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD607C2B0A18F500469FB3 /* UserFirebaseManager.swift */; };
-		9471D2452B0B028B00BA0EA5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471D2442B0B028B00BA0EA5 /* User.swift */; };
+		509C3E1F2B0C213F0046FE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E1E2B0C213F0046FE12 /* ViewController.swift */; };
+		509C3E212B0C215E0046FE12 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E202B0C215E0046FE12 /* MainScreenView.swift */; };
+		509C3E232B0C23270046FE12 /* RightBarButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E222B0C23270046FE12 /* RightBarButtonManager.swift */; };
+		509C3E252B0C23960046FE12 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E242B0C23960046FE12 /* RegisterView.swift */; };
+		509C3E282B0C23B10046FE12 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E272B0C23B10046FE12 /* RegisterViewController.swift */; };
+		509C3E2A2B0C23CD0046FE12 /* RegisterFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E292B0C23CD0046FE12 /* RegisterFirebaseManager.swift */; };
+		509C3E2C2B0C23FB0046FE12 /* RegisterProgreeIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E2B2B0C23FB0046FE12 /* RegisterProgreeIndicatorManager.swift */; };
+		509C3E2E2B0C245C0046FE12 /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E2D2B0C245C0046FE12 /* ProgressSpinnerDelegate.swift */; };
+		509C3E302B0C24770046FE12 /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E2F2B0C24770046FE12 /* ProgressSpinnerViewController.swift */; };
+		509C3E322B0C270A0046FE12 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C3E312B0C270A0046FE12 /* Validation.swift */; };
 		BD0ADFFC2B04904200BD63B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */; };
 		BD0ADFFE2B04904200BD63B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */; };
-		BD0AE0002B04904200BD63B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFF2B04904200BD63B8 /* ViewController.swift */; };
 		BD0AE0032B04904200BD63B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0AE0012B04904200BD63B8 /* Main.storyboard */; };
 		BD0AE0052B04904400BD63B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0AE0042B04904400BD63B8 /* Assets.xcassets */; };
 		BD0AE0082B04904400BD63B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0AE0062B04904400BD63B8 /* LaunchScreen.storyboard */; };
@@ -57,50 +51,28 @@
 		BD0AE0432B04944200BD63B8 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD0AE0422B04944200BD63B8 /* FirebaseRemoteConfigSwift */; };
 		BD0AE0452B04944200BD63B8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BD0AE0442B04944200BD63B8 /* FirebaseStorage */; };
 		BD0AE0472B04944200BD63B8 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BD0AE0462B04944200BD63B8 /* FirebaseStorageCombine-Community */; };
-		BD0AE04B2B04964F00BD63B8 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE04A2B04964F00BD63B8 /* MainScreenView.swift */; };
-		BD0AE0502B049BEA00BD63B8 /* RightBarButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE04F2B049BEA00BD63B8 /* RightBarButtonManager.swift */; };
-		BD0AE0522B049C7A00BD63B8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE0512B049C7A00BD63B8 /* RegisterView.swift */; };
-		BD0AE0542B049C8C00BD63B8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE0532B049C8C00BD63B8 /* RegisterViewController.swift */; };
-		BD0AE0572B049D2F00BD63B8 /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE0562B049D2F00BD63B8 /* ProgressSpinnerDelegate.swift */; };
-		BD0AE0592B049D5400BD63B8 /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE0582B049D5400BD63B8 /* ProgressSpinnerViewController.swift */; };
-		BD0AE05B2B049E0400BD63B8 /* RegisterFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE05A2B049E0400BD63B8 /* RegisterFirebaseManager.swift */; };
-		BD0AE05D2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0AE05C2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		503B52822B05CB420010390B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		503B52A02B08211F0010390B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		503B52A32B0821390010390B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		503B52AC2B08514C0010390B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		503B52AE2B08812E0010390B /* MessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessTableViewCell.swift; sourceTree = "<group>"; };
-		503B52B02B08814B0010390B /* MessTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessTableViewManager.swift; sourceTree = "<group>"; };
 		503B52B22B0881E40010390B /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
-		861087462B09C76D0042D9C9 /* ChatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewCell.swift; sourceTree = "<group>"; };
-		861087482B09EA510042D9C9 /* ChatsTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewManager.swift; sourceTree = "<group>"; };
-		8610874B2B09EAD70042D9C9 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		86CD60732B0A07CE00469FB3 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		86CD60762B0A08E700469FB3 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
-		86CD60782B0A0AA400469FB3 /* FriendsTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewManager.swift; sourceTree = "<group>"; };
-		86CD607A2B0A0D5800469FB3 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
-		86CD607C2B0A18F500469FB3 /* UserFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebaseManager.swift; sourceTree = "<group>"; };
-		9471D2442B0B028B00BA0EA5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		509C3E1E2B0C213F0046FE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		509C3E202B0C215E0046FE12 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		509C3E222B0C23270046FE12 /* RightBarButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonManager.swift; sourceTree = "<group>"; };
+		509C3E242B0C23960046FE12 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		509C3E272B0C23B10046FE12 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		509C3E292B0C23CD0046FE12 /* RegisterFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFirebaseManager.swift; sourceTree = "<group>"; };
+		509C3E2B2B0C23FB0046FE12 /* RegisterProgreeIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgreeIndicatorManager.swift; sourceTree = "<group>"; };
+		509C3E2D2B0C245C0046FE12 /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
+		509C3E2F2B0C24770046FE12 /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
+		509C3E312B0C270A0046FE12 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		BD0ADFF82B04904200BD63B8 /* WA8_Final_Project_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA8_Final_Project_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD0ADFFF2B04904200BD63B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD0AE0022B04904200BD63B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD0AE0042B04904400BD63B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD0AE0072B04904400BD63B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD0AE0092B04904400BD63B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD0AE00F2B04938000BD63B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BD0AE04A2B04964F00BD63B8 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
-		BD0AE04F2B049BEA00BD63B8 /* RightBarButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonManager.swift; sourceTree = "<group>"; };
-		BD0AE0512B049C7A00BD63B8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		BD0AE0532B049C8C00BD63B8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		BD0AE0562B049D2F00BD63B8 /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
-		BD0AE0582B049D5400BD63B8 /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
-		BD0AE05A2B049E0400BD63B8 /* RegisterFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFirebaseManager.swift; sourceTree = "<group>"; };
-		BD0AE05C2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgressIndicatorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,10 +116,7 @@
 		503B52842B05CB4B0010390B /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				503B52822B05CB420010390B /* Message.swift */,
-				503B52AC2B08514C0010390B /* Validation.swift */,
-				8610874B2B09EAD70042D9C9 /* Chat.swift */,
-				9471D2442B0B028B00BA0EA5 /* User.swift */,
+				509C3E312B0C270A0046FE12 /* Validation.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -155,7 +124,6 @@
 		503B52A22B08212C0010390B /* Chat Screen */ = {
 			isa = PBXGroup;
 			children = (
-				503B52A02B08211F0010390B /* ChatViewController.swift */,
 				503B52A52B0821A10010390B /* Views */,
 			);
 			path = "Chat Screen";
@@ -164,9 +132,14 @@
 		503B52A52B0821A10010390B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				503B52A32B0821390010390B /* ChatView.swift */,
-				503B52AE2B08812E0010390B /* MessTableViewCell.swift */,
-				503B52B02B08814B0010390B /* MessTableViewManager.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		509C3E262B0C23A30046FE12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				509C3E242B0C23960046FE12 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,8 +147,7 @@
 		861087452B09C7270042D9C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BD0AE04A2B04964F00BD63B8 /* MainScreenView.swift */,
-				861087462B09C76D0042D9C9 /* ChatsTableViewCell.swift */,
+				509C3E202B0C215E0046FE12 /* MainScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,9 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				86CD60752B0A08C600469FB3 /* Views */,
-				86CD60732B0A07CE00469FB3 /* FriendsViewController.swift */,
-				86CD60782B0A0AA400469FB3 /* FriendsTableViewManager.swift */,
-				86CD607C2B0A18F500469FB3 /* UserFirebaseManager.swift */,
 			);
 			path = "Friends Secreen";
 			sourceTree = "<group>";
@@ -194,8 +163,6 @@
 		86CD60752B0A08C600469FB3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				86CD60762B0A08E700469FB3 /* FriendsView.swift */,
-				86CD607A2B0A0D5800469FB3 /* FriendsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,12 +186,12 @@
 		BD0ADFFA2B04904200BD63B8 /* WA8_Final_Project_1 */ = {
 			isa = PBXGroup;
 			children = (
-				86CD60722B0A078D00469FB3 /* Friends Secreen */,
 				503B52842B05CB4B0010390B /* Data Models */,
 				BD0AE0552B049CF700BD63B8 /* Progress Indicator */,
 				BD0AE0482B0495EC00BD63B8 /* Main Screen */,
 				BD0AE0492B04960300BD63B8 /* Register Screen */,
 				503B52A22B08212C0010390B /* Chat Screen */,
+				86CD60722B0A078D00469FB3 /* Friends Secreen */,
 				BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */,
 				BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */,
 				BD0AE0012B04904200BD63B8 /* Main.storyboard */,
@@ -241,9 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				861087452B09C7270042D9C9 /* Views */,
-				BD0ADFFF2B04904200BD63B8 /* ViewController.swift */,
-				BD0AE04F2B049BEA00BD63B8 /* RightBarButtonManager.swift */,
-				861087482B09EA510042D9C9 /* ChatsTableViewManager.swift */,
+				509C3E1E2B0C213F0046FE12 /* ViewController.swift */,
+				509C3E222B0C23270046FE12 /* RightBarButtonManager.swift */,
 			);
 			path = "Main Screen";
 			sourceTree = "<group>";
@@ -251,10 +217,10 @@
 		BD0AE0492B04960300BD63B8 /* Register Screen */ = {
 			isa = PBXGroup;
 			children = (
-				BD0AE0512B049C7A00BD63B8 /* RegisterView.swift */,
-				BD0AE0532B049C8C00BD63B8 /* RegisterViewController.swift */,
-				BD0AE05A2B049E0400BD63B8 /* RegisterFirebaseManager.swift */,
-				BD0AE05C2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift */,
+				509C3E262B0C23A30046FE12 /* Views */,
+				509C3E272B0C23B10046FE12 /* RegisterViewController.swift */,
+				509C3E292B0C23CD0046FE12 /* RegisterFirebaseManager.swift */,
+				509C3E2B2B0C23FB0046FE12 /* RegisterProgreeIndicatorManager.swift */,
 			);
 			path = "Register Screen";
 			sourceTree = "<group>";
@@ -262,8 +228,8 @@
 		BD0AE0552B049CF700BD63B8 /* Progress Indicator */ = {
 			isa = PBXGroup;
 			children = (
-				BD0AE0562B049D2F00BD63B8 /* ProgressSpinnerDelegate.swift */,
-				BD0AE0582B049D5400BD63B8 /* ProgressSpinnerViewController.swift */,
+				509C3E2D2B0C245C0046FE12 /* ProgressSpinnerDelegate.swift */,
+				509C3E2F2B0C24770046FE12 /* ProgressSpinnerViewController.swift */,
 			);
 			path = "Progress Indicator";
 			sourceTree = "<group>";
@@ -372,33 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0AE0502B049BEA00BD63B8 /* RightBarButtonManager.swift in Sources */,
-				BD0AE04B2B04964F00BD63B8 /* MainScreenView.swift in Sources */,
-				BD0AE0002B04904200BD63B8 /* ViewController.swift in Sources */,
-				861087492B09EA510042D9C9 /* ChatsTableViewManager.swift in Sources */,
-				BD0AE05B2B049E0400BD63B8 /* RegisterFirebaseManager.swift in Sources */,
-				9471D2452B0B028B00BA0EA5 /* User.swift in Sources */,
-				503B52B12B08814B0010390B /* MessTableViewManager.swift in Sources */,
-				86CD60742B0A07CE00469FB3 /* FriendsViewController.swift in Sources */,
-				86CD607D2B0A18F500469FB3 /* UserFirebaseManager.swift in Sources */,
-				503B52A42B0821390010390B /* ChatView.swift in Sources */,
-				86CD60772B0A08E700469FB3 /* FriendsView.swift in Sources */,
-				503B52AD2B08514C0010390B /* Validation.swift in Sources */,
-				BD0AE0592B049D5400BD63B8 /* ProgressSpinnerViewController.swift in Sources */,
-				BD0AE0542B049C8C00BD63B8 /* RegisterViewController.swift in Sources */,
-				BD0AE0522B049C7A00BD63B8 /* RegisterView.swift in Sources */,
-				BD0AE05D2B049E2A00BD63B8 /* RegisterProgressIndicatorManager.swift in Sources */,
-				503B52AF2B08812E0010390B /* MessTableViewCell.swift in Sources */,
+				509C3E232B0C23270046FE12 /* RightBarButtonManager.swift in Sources */,
+				509C3E2A2B0C23CD0046FE12 /* RegisterFirebaseManager.swift in Sources */,
 				BD0ADFFC2B04904200BD63B8 /* AppDelegate.swift in Sources */,
-				503B52A12B08211F0010390B /* ChatViewController.swift in Sources */,
-				86CD60792B0A0AA400469FB3 /* FriendsTableViewManager.swift in Sources */,
-				503B52832B05CB420010390B /* Message.swift in Sources */,
-				8610874C2B09EAD70042D9C9 /* Chat.swift in Sources */,
-				861087472B09C76D0042D9C9 /* ChatsTableViewCell.swift in Sources */,
-				BD0AE0572B049D2F00BD63B8 /* ProgressSpinnerDelegate.swift in Sources */,
+				509C3E212B0C215E0046FE12 /* MainScreenView.swift in Sources */,
+				509C3E322B0C270A0046FE12 /* Validation.swift in Sources */,
+				509C3E282B0C23B10046FE12 /* RegisterViewController.swift in Sources */,
+				509C3E302B0C24770046FE12 /* ProgressSpinnerViewController.swift in Sources */,
+				509C3E252B0C23960046FE12 /* RegisterView.swift in Sources */,
 				BD0ADFFE2B04904200BD63B8 /* SceneDelegate.swift in Sources */,
-				86CD607B2B0A0D5800469FB3 /* FriendsTableViewCell.swift in Sources */,
+				509C3E2C2B0C23FB0046FE12 /* RegisterProgreeIndicatorManager.swift in Sources */,
+				509C3E1F2B0C213F0046FE12 /* ViewController.swift in Sources */,
 				503B52B32B0881E40010390B /* Configs.swift in Sources */,
+				509C3E2E2B0C245C0046FE12 /* ProgressSpinnerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
