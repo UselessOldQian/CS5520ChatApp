@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import FirebaseAuth
+import FirebaseFirestore
 
 extension RegisterViewController{
     
@@ -32,6 +33,7 @@ extension RegisterViewController{
                     Auth.auth().createUser(withEmail: email, password: password, completion: {result, error in
                         if error == nil{
                             self.setNameOfTheUserInFirebaseAuth(name: name)
+                            self.createUserDocument(withEmail: email)
                         }else{
                             print(error)
                         }
@@ -50,6 +52,22 @@ extension RegisterViewController{
                 print("Error occured: \(String(describing: error))")
             }
         })
+    }
+    
+    func createUserDocument(withEmail email: String) {
+        // Get a reference to the Firestore database
+        let db = Firestore.firestore()
+
+        // Create a new document in the 'users' collection with the email as the document ID
+        db.collection("users").document(email).setData([:]) { error in
+            if let error = error {
+                // Handle any errors
+                print("Error creating user document: \(error)")
+            } else {
+                // Document was successfully created
+                print("User document created successfully")
+            }
+        }
     }
     
     private func isValidEmail(_ email: String?) -> Bool {
