@@ -25,5 +25,41 @@ extension FriendsViewController{
             }
         }
     }
+    
+    func checkOrCreateChat(userEmailA: String, userEmailB: String) {
+        let db = Firestore.firestore()
+        let chatsCollection = db.collection("chats")
+
+        // Create a query to check if a chat with these two users exists
+        let query = chatsCollection.whereField("friends", arrayContains: userEmailA)
+        query.getDocuments { (snapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+                return
+            }
+
+            // Check if there's a chat where both emails exist
+            let existingChat = snapshot?.documents.first { document in
+                let friends = document.get("friends") as? [String] ?? []
+                return friends.contains(userEmailB)
+            }
+
+            if let existingChat = existingChat {
+                // Chat exists, handle as needed
+                print("Chat document found with ID: \(existingChat.documentID)")
+            } else {
+                // No such chat exists, create a new one
+                let newChatData: [String: Any] = ["friends": [userEmailA, userEmailB]]
+                chatsCollection.addDocument(data: newChatData) { err in
+                    if let err = err {
+                        print("Error adding chat document: \(err)")
+                    } else {
+                        print("New chat document created")
+                    }
+                }
+            }
+        }
+    }
+
 
 }

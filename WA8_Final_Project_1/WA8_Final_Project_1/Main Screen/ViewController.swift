@@ -66,6 +66,9 @@ class ViewController: UIViewController {
                 
                 //MARK: Logout bar button...
                 self.setupRightBarButton(isLoggedin: true)
+                if let email = user?.email {
+                    self.fetchAllReleventChats(userEmail: email)
+                }
             }
         }
     }
@@ -79,12 +82,9 @@ class ViewController: UIViewController {
         mainScreen.tableViewChats.delegate = self
         mainScreen.tableViewChats.dataSource = self
         
-        self.chats.append(Chat(userId: "user001", text: "Hello there!", _id: "chat001"))
-        self.chats.append(Chat(userId: "user002", text: "How's it going?", _id: "chat002"))
-        self.chats.append(Chat(userId: "user003", text: "Swift is awesome!", _id: "chat003"))
-        
-        print(chats)
-        mainScreen.tableViewChats.reloadData()
+//        self.chats.append(Chat(userId: "user001", text: "Hello there!", _id: "chat001"))
+//        self.chats.append(Chat(userId: "user002", text: "How's it going?", _id: "chat002"))
+//        self.chats.append(Chat(userId: "user003", text: "Swift is awesome!", _id: "chat003"))
         
         //MARK: removing the separator line...
 //        mainScreen.tableViewContacts.separatorStyle = .none

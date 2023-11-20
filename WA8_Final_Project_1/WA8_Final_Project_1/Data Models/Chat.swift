@@ -22,7 +22,7 @@ import FirebaseFirestoreSwift
  struct Chat: Codable {
      @DocumentID var id: String?
      var friends: [String]
-     var friendName: String
-     var lastMessageID: String
+     var friendName: String?
+     var lastMessageID: String?
  }
  

@@ -22,6 +22,7 @@
 		86CD60792B0A0AA400469FB3 /* FriendsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD60782B0A0AA400469FB3 /* FriendsTableViewManager.swift */; };
 		86CD607B2B0A0D5800469FB3 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD607A2B0A0D5800469FB3 /* FriendsTableViewCell.swift */; };
 		86CD607D2B0A18F500469FB3 /* UserFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD607C2B0A18F500469FB3 /* UserFirebaseManager.swift */; };
+		86CD607F2B0B76A800469FB3 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD607E2B0B76A800469FB3 /* FirebaseManager.swift */; };
 		BD0ADFFC2B04904200BD63B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */; };
 		BD0ADFFE2B04904200BD63B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */; };
 		BD0AE0002B04904200BD63B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ADFFF2B04904200BD63B8 /* ViewController.swift */; };
@@ -82,6 +83,7 @@
 		86CD60782B0A0AA400469FB3 /* FriendsTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewManager.swift; sourceTree = "<group>"; };
 		86CD607A2B0A0D5800469FB3 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		86CD607C2B0A18F500469FB3 /* UserFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebaseManager.swift; sourceTree = "<group>"; };
+		86CD607E2B0B76A800469FB3 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		BD0ADFF82B04904200BD63B8 /* WA8_Final_Project_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA8_Final_Project_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0ADFFB2B04904200BD63B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD0ADFFD2B04904200BD63B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				BD0ADFFF2B04904200BD63B8 /* ViewController.swift */,
 				BD0AE04F2B049BEA00BD63B8 /* RightBarButtonManager.swift */,
 				861087482B09EA510042D9C9 /* ChatsTableViewManager.swift */,
+				86CD607E2B0B76A800469FB3 /* FirebaseManager.swift */,
 			);
 			path = "Main Screen";
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				BD0AE0502B049BEA00BD63B8 /* RightBarButtonManager.swift in Sources */,
 				BD0AE04B2B04964F00BD63B8 /* MainScreenView.swift in Sources */,
 				BD0AE0002B04904200BD63B8 /* ViewController.swift in Sources */,
+				86CD607F2B0B76A800469FB3 /* FirebaseManager.swift in Sources */,
 				861087492B09EA510042D9C9 /* ChatsTableViewManager.swift in Sources */,
 				BD0AE05B2B049E0400BD63B8 /* RegisterFirebaseManager.swift in Sources */,
 				503B52B12B08814B0010390B /* MessTableViewManager.swift in Sources */,

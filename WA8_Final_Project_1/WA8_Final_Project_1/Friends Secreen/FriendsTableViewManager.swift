@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -19,9 +20,32 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let user = Auth.auth().currentUser {
+            // User is signed in
+            print("User Email: \(user.email ?? "No email")")
+            if let senderEmail = user.email {
+                let receiverEmail = friends[indexPath.row]
+                if senderEmail == receiverEmail {
+                    showAlert(with: "Error", message: "Cannot create chat, sender and receiver is the same")
+                    return
+                }
+                self.checkOrCreateChat(userEmailA: senderEmail, userEmailB: receiverEmail)
+            }
+        } else {
+            // No user is signed in
+            print("No user is currently signed in")
+            return
+        }
+        print("Chats: \(friends[indexPath.row])")
         // Pop to MainScreen
         navigationController?.popViewController(animated: true)
         let chatViewController = ChatViewController()
         navigationController?.pushViewController(chatViewController, animated: true)
+    }
+    
+    private func showAlert(with title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 }
