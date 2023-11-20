@@ -64,6 +64,10 @@ class ChatViewController: UIViewController {
         
         scrollToBottom()
 //        chatScreen.tableViewMessages.reloadData()
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardOnTap))
+        tapRecognizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapRecognizer)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -87,6 +91,10 @@ class ChatViewController: UIViewController {
                 self.chatScreen.tableViewMessages.scrollToRow(at: indexPath, at: .bottom, animated: false)
             }
         }
+    }
+    
+    @objc func hideKeyboardOnTap() {
+        view.endEditing(true)
     }
     
 
