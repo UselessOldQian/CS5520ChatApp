@@ -127,116 +127,70 @@ class ViewController: UIViewController {
             return
         }
         
-        let chatCollection = database.collection("users").document(userEmail).collection("chats")
-        var chatIDs:[String] = []
+//        var chatIDs: [String] = []
         
-        chatCollection.addSnapshotListener { (querySnapshot, error) in
-            guard let documents = querySnapshot?.documents else {
-                print("No documents: \(error?.localizedDescription ?? "Unknown error")")
+        let userCollection = database.collection("users").document(userEmail).collection("chats")
+        userCollection.addSnapshotListener { (querySnapshot, error) in
+            guard let userDocuments = querySnapshot?.documents else {
+                print("No documents in users collection: \(error?.localizedDescription ?? "Unknown error")")
                 return
             }
             
-            chatIDs = documents.map { document in
-                return document.documentID
-            }
+            let chatCollection = self.database.collection("chats")
             
-            print("chatIDs:")
-            print(chatIDs)
+            let dispatchGroup = DispatchGroup()
             
-            for id in chatIDs {
-                let chatDocument = self.database.collection("chats").document(id)
-                chatDocument.getDocument { (documentSnapshot, error) in
-                    if let error = error {
-                        print("Error fetching document: \(error.localizedDescription)")
-                    } else if let document = documentSnapshot, document.exists {
-                        // Access the data from the document
-                        if let chatData = document.data() {
-                            print("Chat Data: \(chatData)")
-                            
-                            // If your document data is expected to be a dictionary, you can access specific fields like this:
+     
+            
+            for userDoc in userDocuments {
+                let chatDocRef = chatCollection.document(userDoc.documentID)
+                
+                dispatchGroup.enter()
+                
+                DispatchQueue.main.async {
+                    chatDocRef.getDocument { (document, error) in
+                        defer {
+                            dispatchGroup.leave()
+                        }
+                        guard let chatDocument = document else {
+                            print("Error fetching data document or doesn't exist")
+                            return
+                        }
+                        if let chatData = chatDocument.data() {
                             if let friendName = chatData["friendName"] as? String,
                                let friends = chatData["friends"] as? [String],
                                let lastMessageID = chatData["lastMessageID"] as? String {
-                                print("friend name: \(friendName)")
-                                print("friends:  \(friends[0])  \(friends[1])")
-                                print("Last Message: \(lastMessageID)\n\n")
                                 
-                                self.chats.append(Chat(id: id, friends: friends, friendName: friendName, lastMessageID: lastMessageID))
-                                print("CHATS: \(self.chats)")
-                                
-                                
-                            } else {
-                                print("Error unwrapping variables")
+                                self.chats.append(Chat(id: userDoc.documentID, friends: friends, friendName: friendName, lastMessageID: lastMessageID))
+                                print("self chats: \(self.chats)")
                             }
-                            
                         }
-                        
-                        
-                        // You can do further processing with the retrieved data here
-                    } else {
-                        print("Document does not exist")
                     }
                 }
                 
             }
             
-            
-            
-            
-        
-            
-
-            DispatchQueue.main.async {
-                // Update your UI, e.g., reloading a table view
+            dispatchGroup.notify(queue: .main) {
+                print("self chats in notify:  \(self.chats)")
                 self.mainScreen.tableViewChats.reloadData()
             }
-        }
-        
-//        self.chats.removeAll()
-//        let db = Firestore.firestore()
-//        let chatsCollection = db.collection("chats")
-//
-//        // DispatchGroup to track Firestore queries
-//        let dispatchGroup = DispatchGroup()
-//
-//        // Create a query to check if a chat with these two users exists
-//        let query = chatsCollection.whereField("friends", arrayContains: userEmail)
-//
-//        // Query the 'chats' collection
-//        query.getDocuments { (snapshot, error) in
-//            guard let documents = snapshot?.documents, error == nil else {
-//                print("Error fetching chats: \(error?.localizedDescription ?? "Unknown error")")
-//                return
+            
+            
+            
+            
+            
+            
+            
+//            chatIDs = documents.map { document in
+//                return document.documentID
 //            }
-//            print("Found \(documents.count) documents")
-//            for document in documents {
-//
-//                var chat = try? document.data(as: Chat.self)
-//
-//                // Identify the friend's email
-//                if let friendEmail = chat?.friends.first(where: { $0 != userEmail }) {
-//                    dispatchGroup.enter()
-//
-//                    // Query the 'users' collection to get the friend's name
-//                    db.collection("users").document(friendEmail).getDocument { (userDoc, error) in
-//                        if let userData = userDoc?.data(), error == nil {
-//                            chat?.friendName = userData["name"] as? String ?? "Unknown"
-//                        } else {
-//                            print("Error fetching user data: \(error?.localizedDescription ?? "Unknown error")")
-//                        }
-//
-//                        if let chat = chat {
-//                            self.chats.append(chat)
-////                            print(self.chats)
-//                        }
-//                        dispatchGroup.leave()
-//                    }
-//                }
-//            }
-//            dispatchGroup.notify(queue: .main) {
+            
+            
+//            DispatchQueue.main.async {
+//                // Update your UI, e.g., reloading a table view
 //                self.mainScreen.tableViewChats.reloadData()
 //            }
-//        }
+        }
     }
 
     @objc func addContactButtonTapped(){
