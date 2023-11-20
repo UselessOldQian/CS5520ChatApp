@@ -27,6 +27,7 @@ class FriendsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "More friends to chat"
         friendsScreen.tableViewFriends.delegate = self
         friendsScreen.tableViewFriends.dataSource = self
 //        friendsScreen.tableViewFriends.separatorStyle = .none
