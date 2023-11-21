@@ -29,18 +29,38 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
                     showAlert(with: "Error", message: "Cannot create chat, sender and receiver is the same")
                     return
                 }
-                self.checkOrCreateChat(userEmailA: senderEmail, userEmailB: receiverEmail)
+                
+                checkOrCreateChat(userEmailA: senderEmail, userEmailB: receiverEmail) { chatDocumentID in
+                    if let chatDocumentID = chatDocumentID {
+                        print("Chat document ID: \(chatDocumentID)")
+                        // Pop to MainScreen
+                        self.navigationController?.popViewController(animated: true)
+                        let chatViewController = ChatViewController()
+                        chatViewController.chatID = chatDocumentID
+                        chatViewController.selfEmail = senderEmail
+                        chatViewController.friendEmail = receiverEmail
+                        self.fetchUserName(byEmail: receiverEmail) { userName in
+                            if let userName = userName {
+                                print("User's name: \(userName)")
+                                chatViewController.friendName = userName
+                            } else {
+                                print("User's name could not be fetched")
+                            }
+                        }
+                        
+                        self.navigationController?.pushViewController(chatViewController, animated: true)
+                    } else {
+                        print("No chat document found or created")
+                    }
+                }
+//                self.checkOrCreateChat(userEmailA: senderEmail, userEmailB: receiverEmail)
             }
         } else {
             // No user is signed in
             print("No user is currently signed in")
             return
         }
-        print("Chats: \(friends[indexPath.row])")
-        // Pop to MainScreen
-        navigationController?.popViewController(animated: true)
-        let chatViewController = ChatViewController()
-        navigationController?.pushViewController(chatViewController, animated: true)
+//        print("Chats: \(friends[indexPath.row])")
     }
     
     private func showAlert(with title: String, message: String) {

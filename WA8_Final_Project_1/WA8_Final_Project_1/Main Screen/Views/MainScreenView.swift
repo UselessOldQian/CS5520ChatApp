@@ -25,7 +25,7 @@ class MainScreenView: UIView {
         setupFloatingButtonAddContact()
         setupTableViewChats()
         
-        testSetupBtn()
+//        testSetupBtn()
 //        testSetupLabel()
         
         initConstraints()
@@ -51,12 +51,12 @@ class MainScreenView: UIView {
         ])
     }
     
-    func testSetupBtn() {
-        testButton = UIButton(type: .system)
-        testButton.setTitle("test chat screen", for: .normal)
-        testButton.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(testButton)
-    }
+//    func testSetupBtn() {
+//        testButton = UIButton(type: .system)
+//        testButton.setTitle("test chat screen", for: .normal)
+//        testButton.translatesAutoresizingMaskIntoConstraints = false
+//        self.addSubview(testButton)
+//    }
     
     func setupProfilePic(){
         profilePic = UIImageView()
@@ -126,8 +126,8 @@ class MainScreenView: UIView {
             floatingButtonAddMessage.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
             
-            testButton.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            testButton.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor),
+//            testButton.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+//            testButton.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor),
             
         ])
     }

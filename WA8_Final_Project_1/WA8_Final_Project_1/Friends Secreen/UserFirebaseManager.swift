@@ -26,7 +26,7 @@ extension FriendsViewController{
         }
     }
     
-    func checkOrCreateChat(userEmailA: String, userEmailB: String) {
+    func checkOrCreateChat(userEmailA: String, userEmailB: String, completion: @escaping (String?) -> Void) {
         let db = Firestore.firestore()
         let chatsCollection = db.collection("chats")
 
@@ -35,6 +35,7 @@ extension FriendsViewController{
         query.getDocuments { (snapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
+                completion(nil)  // Return nil on error
                 return
             }
 
@@ -45,21 +46,49 @@ extension FriendsViewController{
             }
 
             if let existingChat = existingChat {
-                // Chat exists, handle as needed
+                // Chat exists, return the document ID
                 print("Chat document found with ID: \(existingChat.documentID)")
+                completion(existingChat.documentID)
             } else {
                 // No such chat exists, create a new one
                 let newChatData: [String: Any] = ["friends": [userEmailA, userEmailB]]
                 chatsCollection.addDocument(data: newChatData) { err in
                     if let err = err {
                         print("Error adding chat document: \(err)")
+                        completion(nil)  // Return nil on error
                     } else {
+                        // Return the newly created document ID
                         print("New chat document created")
+                        chatsCollection.document().documentID
+                        completion(chatsCollection.document().documentID)
                     }
                 }
             }
         }
     }
+    
+    func fetchUserName(byEmail email: String, completion: @escaping (String?) -> Void) {
+        let db = Firestore.firestore()
+        let usersCollection = db.collection("users")
+
+        // Query the 'users' collection for the document with the given email
+        usersCollection.document(email).getDocument { (document, error) in
+            if let error = error {
+                print("Error fetching user: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+
+            if let document = document, document.exists {
+                let userName = document.data()?["name"] as? String
+                completion(userName)
+            } else {
+                print("Document does not exist")
+                completion(nil)
+            }
+        }
+    }
+
 
 
 }

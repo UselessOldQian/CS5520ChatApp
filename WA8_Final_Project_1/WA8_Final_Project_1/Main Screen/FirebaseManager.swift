@@ -45,7 +45,7 @@ extension ViewController {
                         
                         if let chat = chat {
                             self.chats.append(chat)
-//                            print(self.chats)
+                            print(self.chats)
                         }
                         dispatchGroup.leave()
                     }

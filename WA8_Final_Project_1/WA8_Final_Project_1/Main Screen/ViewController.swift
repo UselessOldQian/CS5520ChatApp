@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         //MARK: tapping the floating add contact button...
         mainScreen.floatingButtonAddMessage.addTarget(self, action: #selector(addContactButtonTapped), for: .touchUpInside)
         
-        mainScreen.testButton.addTarget(self, action: #selector(testButtonTapped), for: .touchUpInside)
+//        mainScreen.testButton.addTarget(self, action: #selector(testButtonTapped), for: .touchUpInside)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
