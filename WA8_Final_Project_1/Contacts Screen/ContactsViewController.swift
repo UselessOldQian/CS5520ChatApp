@@ -56,8 +56,8 @@ class ContactsViewController: UIViewController {
             }
             
             for doc in documents {
-//                print("doc id: \(doc.documentID)")
-//                print("email: \(email)")
+                print("doc id: \(doc.documentID)")
+                print("email: \(email)")
                 if doc.documentID != email {
                     if let userData = try? doc.data(as: User.self) {
                         self.contacts.append(userData)

@@ -40,6 +40,7 @@ class RegisterView: UIView {
     func setupName() {
         nameTextField = UITextField()
         nameTextField.placeholder = "Name"
+        nameTextField.autocapitalizationType = .none
         nameTextField.borderStyle = .roundedRect
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(nameTextField)
@@ -48,6 +49,7 @@ class RegisterView: UIView {
     func setupEmail() {
         emailTextField = UITextField()
         emailTextField.placeholder = "Email"
+        emailTextField.autocapitalizationType = .none
         emailTextField.borderStyle = .roundedRect
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(emailTextField)
@@ -56,6 +58,8 @@ class RegisterView: UIView {
     func setupPassword() {
         passwordTextField = UITextField()
         passwordTextField.placeholder = "Password"
+        passwordTextField.autocapitalizationType = .none
+        passwordTextField.isSecureTextEntry = true
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(passwordTextField)
