@@ -17,6 +17,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Configs.tableViewChatsID, for: indexPath) as! ChatsTableViewCell
         cell.labelName.text = chats[indexPath.row].friendName
+        if let lastMessage = chats[indexPath.row].messages?.last {
+            cell.labelText.text = lastMessage.text
+            cell.labelTime.text = lastMessage.time
+        } else {
+            cell.labelText.text = "No Messages"
+            cell.labelTime.text = "Unknown Time"
+        }
+
         return cell
     }
     

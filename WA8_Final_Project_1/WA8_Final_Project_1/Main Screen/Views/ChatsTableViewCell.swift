@@ -44,7 +44,7 @@ class ChatsTableViewCell: UITableViewCell {
     
     func setupLabelName(){
         labelName = UILabel()
-        labelName.text = "Tester"
+//        labelName.text = "Tester"
         labelName.font = UIFont.boldSystemFont(ofSize: 16)
         labelName.translatesAutoresizingMaskIntoConstraints = false
         wrapperCellView.addSubview(labelName)
@@ -52,7 +52,7 @@ class ChatsTableViewCell: UITableViewCell {
     
     func setupLabelTime(){
         labelTime = UILabel()
-        labelTime.text = "2023/10/11 12:20"
+//        labelTime.text = "2023/10/11 12:20"
         labelTime.font = UIFont.boldSystemFont(ofSize: 16)
         labelTime.translatesAutoresizingMaskIntoConstraints = false
         wrapperCellView.addSubview(labelTime)
@@ -60,7 +60,7 @@ class ChatsTableViewCell: UITableViewCell {
     
     func setupLabelText(){
         labelText = UILabel()
-        labelText.text = "Hi how are you"
+//        labelText.text = "Hi how are you"
         labelText.font = UIFont.systemFont(ofSize: 14)
         labelText.translatesAutoresizingMaskIntoConstraints = false
         wrapperCellView.addSubview(labelText)
