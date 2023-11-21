@@ -47,7 +47,8 @@ class ViewController: UIViewController {
                 
                 //MARK: Reset tableView...
                 self.messageList.removeAll()
-//                self.mainScreen.tableViewContacts.reloadData()
+                self.chats.removeAll()
+                self.mainScreen.tableViewChats.reloadData()
                 
                 //MARK: Sign in bar button...
                 self.setupRightBarButton(isLoggedin: false)

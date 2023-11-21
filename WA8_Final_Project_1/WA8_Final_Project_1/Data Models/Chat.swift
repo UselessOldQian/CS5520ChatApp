@@ -24,5 +24,6 @@ import FirebaseFirestoreSwift
      var friends: [String]
      var friendName: String?
      var lastMessageID: String?
+     var lastMessage: Message?
  }
  
