@@ -49,6 +49,7 @@ extension RegisterViewController{
                 self.hideActivityIndicator()
                 self.navigationController?.popViewController(animated: true)
             }else{
+                self.hideActivityIndicator()
                 print("Error occured: \(String(describing: error))")
             }
         })
