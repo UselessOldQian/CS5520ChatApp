@@ -60,6 +60,7 @@ class RegisterView: UIView {
         passwordTextField.placeholder = "Password"
         passwordTextField.autocapitalizationType = .none
         passwordTextField.isSecureTextEntry = true
+        passwordTextField.textContentType = .none
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(passwordTextField)

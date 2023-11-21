@@ -14,12 +14,21 @@ class RegisterViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Register"
         navigationController?.navigationBar.prefersLargeTitles = true
         registerView.createButton.addTarget(self, action: #selector(onRegisterTapped), for: .touchUpInside)
-        title = "Register"
+        
+        // hide keyword if app screen is tapped
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardOnTap))
+        tapRecognizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapRecognizer)
     }
     
     @objc func onRegisterTapped(){
         registerNewAccount()
+    }
+    
+    @objc func hideKeyboardOnTap(){
+        view.endEditing(true)
     }
 }

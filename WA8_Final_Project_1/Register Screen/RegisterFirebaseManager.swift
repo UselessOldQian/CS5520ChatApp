@@ -10,7 +10,7 @@ extension RegisterViewController {
         if let name = registerView.nameTextField.text,
            let email = registerView.emailTextField.text,
            let password = registerView.passwordTextField.text {
-            Auth.auth().createUser(withEmail: email, password: password, completion: {result, error in
+            Auth.auth().createUser(withEmail: email.lowercased(), password: password, completion: {result, error in
                 if let maybeError = error {
 
                     let err = maybeError as NSError
@@ -27,7 +27,7 @@ extension RegisterViewController {
                     self.hideActivityIndicator()
                     
                     self.setNameOfTheUserInFirebaseAuth(name: name)
-                    self.addUserToDatabase(email, name)
+                    self.addUserToDatabase(email.lowercased(), name)
                 }
                 
                 
