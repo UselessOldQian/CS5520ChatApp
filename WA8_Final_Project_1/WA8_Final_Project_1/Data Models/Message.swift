@@ -31,4 +31,5 @@ struct Message: Codable {
     var text: String
     var sender: String
     var time: String
+    var utc: Date
 }

@@ -52,7 +52,7 @@ class ChatViewController: UIViewController {
     }
 //
     func getAllMessages(chatID: String) {
-        let messageCollection = database.collection("chats").document(chatID).collection("messages").order(by: "time")
+        let messageCollection = database.collection("chats").document(chatID).collection("messages").order(by: "utc")
 
         messageCollection.addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
@@ -78,13 +78,15 @@ class ChatViewController: UIViewController {
             let sender = (self.selfEmail)!
             let datetime = Date()
             let datetimeEpoch = datetime.timeIntervalSince1970
+            print(datetime)
             let df = DateFormatter()
             df.dateFormat = "y/MM/dd H:mm a"
             df.amSymbol = "AM"
             df.pmSymbol = "PM"
             let time = df.string(from: datetime)
+            print(time)
             
-            let message = Message(text: text, sender: sender, time: time)
+            let message = Message(text: text, sender: sender, time: time, utc: datetime)
             saveMessageToFirestore(message: message)
             chatScreen.textFieldMessage.text = ""
         }
