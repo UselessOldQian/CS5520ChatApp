@@ -44,6 +44,5 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
                 print("No different email found")
             }
         }
-//        self.sendMsgs(from: "usera", to: "userb")
     }
 }

@@ -44,17 +44,8 @@ class ChatView: UIView {
     
     func setupButtonSend() {
         buttonSend = UIButton(type: .system)
-        
-//        buttonSend.tintColor = UIColor.red
-        
         buttonSend.setTitle("Send", for: .normal)
-        
-//        buttonSend.setTitleColor(.black, for: .normal)
         buttonSend.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-//        buttonSend.layer.borderWidth = 2
-//        buttonSend.layer.borderColor = UIColor.blue.cgColor
-//        buttonSend.layer.cornerRadius = 5
-        
         buttonSend.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(buttonSend)
     }
@@ -84,12 +75,4 @@ class ChatView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

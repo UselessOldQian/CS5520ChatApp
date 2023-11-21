@@ -53,14 +53,12 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
                         print("No chat document found or created")
                     }
                 }
-//                self.checkOrCreateChat(userEmailA: senderEmail, userEmailB: receiverEmail)
             }
         } else {
             // No user is signed in
             print("No user is currently signed in")
             return
         }
-//        print("Chats: \(friends[indexPath.row])")
     }
     
     private func showAlert(with title: String, message: String) {

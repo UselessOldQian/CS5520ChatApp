@@ -22,7 +22,6 @@ class FriendsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        friendsScreen.tableViewFriends.reloadData()
         self.fetchUserDocumentIDs() {
             self.updateFriendsTableNames(emails: self.friends)
         }
@@ -33,26 +32,7 @@ class FriendsViewController: UIViewController {
         title = "More friends to chat"
         friendsScreen.tableViewFriends.delegate = self
         friendsScreen.tableViewFriends.dataSource = self
-//        friendsScreen.tableViewFriends.separatorStyle = .none
-        
-//        self.friends.append("user001")
-//        self.friends.append("user002")
-//        self.friends.append("user003")
         
         friendsScreen.tableViewFriends.reloadData()
-        
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

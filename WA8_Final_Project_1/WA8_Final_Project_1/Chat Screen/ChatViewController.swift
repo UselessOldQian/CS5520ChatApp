@@ -45,12 +45,9 @@ class ChatViewController: UIViewController {
         chatScreen.tableViewMessages.dataSource = self
         chatScreen.tableViewMessages.separatorStyle = .none
     
-//        getAllMessages(chatID: chatID)
         self.chatScreen.buttonSend.addTarget(self, action: #selector(onButtonAddTapped), for: .touchUpInside)
-//        scrollToBottom()
-//        chatScreen.tableViewMessages.reloadData()
     }
-//
+
     func getAllMessages(chatID: String) {
         let messageCollection = database.collection("chats").document(chatID).collection("messages").order(by: "utc")
 
@@ -103,26 +100,21 @@ class ChatViewController: UIViewController {
             try newMessageRef.setData(from: newMessage) { error in
                 if let error = error {
                     print("Error adding message: \(error.localizedDescription)")
-                    // Handle the error
                 } else {
                     print("Message added successfully with ID \(newMessageID)")
 
-                    // Update the lastMessageID in the chat document
                     let chatDocumentRef = self.database.collection("chats").document(self.chatID)
                     chatDocumentRef.updateData(["lastMessageID": newMessageID]) { err in
                         if let err = err {
                             print("Error updating chat's lastMessageID: \(err.localizedDescription)")
-                            // Handle the error
                         } else {
                             print("Chat's lastMessageID updated successfully")
-                            // Perform any follow-up actions as necessary
                         }
                     }
                 }
             }
         } catch let error {
             print("Error encoding message: \(error.localizedDescription)")
-            // Handle the error
         }
     }
     
@@ -160,8 +152,6 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
         let message = messages[indexPath.row]
         cell.labelMessage.text = message.text
         cell.labelTime.text = message.time
-//        print("LABELMESSAGE:")
-//        print(cell.labelMessage.text)
         if message.sender == selfEmail {
             cell.setSelfConstraint()
         } else {
