@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  WA8_Final_Project_1
-//
-//  Created by Tiffany Zhang on 11/20/23.
-//
 
 import UIKit
 import FirebaseAuth
@@ -11,9 +5,12 @@ import FirebaseFirestore
 
 class ViewController: UIViewController {
     let mainScreen = MainScreenView()
+    
     var handleAuth: AuthStateDidChangeListenerHandle?
-    var currentUser:FirebaseAuth.User?
+//    var currentUser: FirebaseAuth.User?
+    
     let database = Firestore.firestore()
+    var chats = [Chat]()
     
     override func loadView() {
         view = mainScreen
@@ -22,39 +19,41 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //MARK: handling if the Authentication state is changed (sign in, sign out, register)...
+        // handle authentication state change
         handleAuth = Auth.auth().addStateDidChangeListener{ auth, user in
-            if user == nil{
-                //MARK: not signed in...
-                self.currentUser = nil
+            // no user signed in
+            if user == nil {
+//                self.currentUser = nil
                 self.mainScreen.labelText.text = "Please sign in to see the messages!"
                 self.mainScreen.floatingButtonAddMessage.isEnabled = false
                 self.mainScreen.floatingButtonAddMessage.isHidden = true
-                
-                //MARK: Reset the profile pic...
+                // reset profile pic
                 self.mainScreen.profilePic.image = UIImage(systemName: "person.circle")?.withRenderingMode(.alwaysOriginal)
                 
                 //MARK: Reset tableView...
 //                self.messageList.removeAll()
 //                self.mainScreen.tableViewContacts.reloadData()
                 
-                //MARK: Sign in bar button...
+                // setup sign in bar button
                 self.setupRightBarButton(isLoggedin: false)
                 
-            }else{
-                //MARK: the user is signed in...
-                self.currentUser = user
+            } else {
+                // user has signed in
+                Validation.defaults.set(user?.email, forKey: "auth")
+//                self.currentUser = user
                 self.mainScreen.labelText.text = "Welcome \(user?.displayName ?? "Anonymous")!"
                 self.mainScreen.floatingButtonAddMessage.isEnabled = true
                 self.mainScreen.floatingButtonAddMessage.isHidden = false
                 
-                //MARK: setting the profile photo...
+                // set profile pic
 //                if let url = self.currentUser?.photoURL{
 //                    self.mainScreen.profilePic.loadRemoteImage(from: url)
 //                }
                 
-                //MARK: Logout bar button...
+                // setup logout bar button
                 self.setupRightBarButton(isLoggedin: true)
+                
+                self.getAllChats(userEmail: (user?.email)!)
             }
         }
     }
@@ -78,7 +77,7 @@ class ViewController: UIViewController {
         view.bringSubviewToFront(mainScreen.floatingButtonAddMessage)
         
         //MARK: tapping the floating add contact button...
-        mainScreen.floatingButtonAddMessage.addTarget(self, action: #selector(addContactButtonTapped), for: .touchUpInside)
+        mainScreen.floatingButtonAddMessage.addTarget(self, action: #selector(selectContactButtonTapped), for: .touchUpInside)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -90,7 +89,14 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password)
     }
     
-    @objc func addContactButtonTapped() {
+    func getAllChats(userEmail: String) {
+        // get last message with each friend from chats collection
         
+        
+    }
+    
+    @objc func selectContactButtonTapped() {
+        let contactsViewController = ContactsViewController()
+        navigationController?.pushViewController(contactsViewController, animated: true)
     }
 }

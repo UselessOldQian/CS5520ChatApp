@@ -1,9 +1,3 @@
-//
-//  ChatsTableViewCell.swift
-//  WA8_Final_Project_1
-//
-//  Created by GG Q on 2023/11/18.
-//
 
 import UIKit
 

@@ -1,19 +1,13 @@
-//
-//  RegisterViewController.swift
-//  WA8_Final_Project_1
-//
-//  Created by Tiffany Zhang on 11/20/23.
-//
 
 import UIKit
 import FirebaseAuth
-import FirebaseStorage
+import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
     
     let registerView = RegisterView()
-    
     let childProgressView = ProgressSpinnerViewController()
+    let database = Firestore.firestore()
     
     override func loadView() {
         view = registerView

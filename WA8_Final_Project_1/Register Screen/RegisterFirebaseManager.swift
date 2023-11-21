@@ -1,47 +1,73 @@
-//
-//  RegisterFirebaseManager.swift
-//  WA8_Final_Project_1
-//
-//  Created by Tiffany Zhang on 11/20/23.
-//
-//
-//  RegisterFirebaseManager.swift
-//  WA8_Final_Project_1
-//
-//  Created by Jacqueline Guo on 11/14/23.
-//
 
 import Foundation
 import FirebaseAuth
+//hideActivityIndicator
 
-extension RegisterViewController{
+extension RegisterViewController {
     
-    func registerNewAccount(){
+    func registerNewAccount() {
         showActivityIndicator()
         if let name = registerView.nameTextField.text,
            let email = registerView.emailTextField.text,
-           let password = registerView.passwordTextField.text{
+           let password = registerView.passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password, completion: {result, error in
-                if error == nil{
+                if let maybeError = error {
+
+                    let err = maybeError as NSError
+                    switch err.code {
+                    case AuthErrorCode.emailAlreadyInUse.rawValue:
+                        Validation.showAlert(self, "Email Occupied", "The email address is already in use.")
+                        self.hideActivityIndicator()
+                    default:
+                        Validation.showAlert(self, "Input Error", "Username or password does not meet requirement.")
+                        self.hideActivityIndicator()
+                    }
+                } else {
+                    Validation.showAlert(self, "Success", "You are now logged in!")
+                    self.hideActivityIndicator()
+                    
                     self.setNameOfTheUserInFirebaseAuth(name: name)
-                }else{
-                    print(error)
+                    self.addUserToDatabase(email, name)
                 }
+                
+                
+                
+                
+                
+                
+                
+//                if error == nil {
+//                    self.setNameOfTheUserInFirebaseAuth(name: name)
+//                    self.addUserToDatabase(email, name)
+//                } else {
+//                    print("ERROR!!!")
+//                    print(error)
+//                }
             })
         }
     }
     
-    func setNameOfTheUserInFirebaseAuth(name: String){
+    func setNameOfTheUserInFirebaseAuth(name: String) {
         let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
         changeRequest?.displayName = name
         changeRequest?.commitChanges(completion: {(error) in
-            if error == nil{
-                self.hideActivityIndicator()
+            if error == nil {
                 self.navigationController?.popViewController(animated: true)
-            }else{
+            } else {
                 print("Error occured: \(String(describing: error))")
             }
         })
+    }
+    
+    func addUserToDatabase(_ email: String, _ name: String) {
+        let userData: [String: String] = ["name": name]
+        database.collection("usersDemo").document(email).setData(userData) { error in
+            if let error = error {
+                print("Error adding user: \(error)")
+            } else {
+                print("FOR LOG ONLY!!! Document added with ID: \(email)")
+            }
+        }
     }
 }
 

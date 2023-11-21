@@ -1,9 +1,3 @@
-//
-//  Validation.swift
-//  WA8_Final_Project_1
-//
-//  Created by Tiffany Zhang on 11/20/23.
-//
 
 import Foundation
 import UIKit
@@ -34,15 +28,15 @@ class Validation {
         return passwordPred.evaluate(with: password)
     }
     
-//    static func showErrorAlert(_ view: UIViewController, _ text: String) {
-//        let alert = UIAlertController(title: "Error!", message: text, preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .default))
-//        view.present(alert, animated: true)
-//    }
-    
     static func showAlert(_ view: UIViewController, _ title: String, _ message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         view.present(alertController, animated: true, completion: nil)
+    }
+    
+    static func formatDate(_ date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy HH:mm"
+        return dateFormatter.string(from: date)
     }
 }

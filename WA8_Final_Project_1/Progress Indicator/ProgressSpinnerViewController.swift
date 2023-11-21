@@ -1,9 +1,3 @@
-//
-//  ProgressSpinnerViewController.swift
-//  WA8_Final_Project_1
-//
-//  Created by Tiffany Zhang on 11/20/23.
-//
 
 import UIKit
 

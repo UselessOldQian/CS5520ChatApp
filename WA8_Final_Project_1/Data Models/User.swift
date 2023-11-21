@@ -10,6 +10,5 @@ import FirebaseFirestoreSwift
 
 struct User: Codable {
     @DocumentID var id: String?
-    var email: String
     var name: String
 }
