@@ -352,8 +352,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "95E0256E-5A8C-48C6-A953-DE80571F50E4 - be0d7c145fda7237"
@@ -400,8 +400,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "FD96A80F-E679-4B55-B271-70941EE4C08C - 5516cc1c245544ed"
@@ -463,8 +463,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "10B292D7-CA0E-42ED-A744-C5A63A51C63A - 5516cc1c245547c4"
@@ -511,8 +511,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
             endingLineNumber = "61"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "BB6A62E4-E3A0-4288-B8B1-9ECFCC3C287C - fcb25345e58b300d"
@@ -589,8 +589,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "D5CC311E-5525-49D0-97B8-37CEEE75E071 - fcb25345e58b30ec"
@@ -637,8 +637,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -861,8 +861,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "240CAF03-3786-46B7-9C3A-A4F48B682F6E - 5516cc1c24554440"
@@ -954,8 +954,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "5E78B031-626C-4C9B-A5DA-48277D53677A - 5516cc1c245547e5"
@@ -1017,8 +1017,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "4234982D-B786-4925-9490-D40A4A4D0ED4 - 5516cc1c245547e5"
@@ -1065,8 +1065,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "BF2FA780-F0CE-421D-8E17-AB53D3083DF3 - 5516cc1c245547c4"
@@ -1113,8 +1113,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1129,8 +1129,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "79562090-2855-447B-B578-A48B87A18A83 - 41c955184a96b4c2"
@@ -1177,8 +1177,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "19E0C451-1C8C-46AB-994C-6687A0DB0225 - 41c955184a96b523"
@@ -1225,8 +1225,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1241,8 +1241,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "E71F9D2C-0E4D-4370-A668-92CA136D2F92 - 41c955184a96b54e"
@@ -1289,8 +1289,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1305,8 +1305,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1321,8 +1321,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1337,8 +1337,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "DDD2DE23-2F06-44C7-A4C7-744DD2CF222E - 41c955184a96b5ca"
