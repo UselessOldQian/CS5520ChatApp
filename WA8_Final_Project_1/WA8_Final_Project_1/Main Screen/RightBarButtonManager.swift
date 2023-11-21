@@ -109,21 +109,15 @@ extension ViewController{
                 let err = maybeError as NSError
                 switch err.code {
                 case AuthErrorCode.internalError.rawValue:
-                    self.showAlert(with: "Incorrect Username or Password", message: "The username or password you entered is incorrect. Please try again.")
+                    Validation.showAlert(self, "Incorrect Username or Password", "The username or password you entered is incorrect. Please try again.")
                 default:
-                    self.showAlert(with: "Login Error", message: "An error occurred during login: \(error!.localizedDescription)")
+                    Validation.showAlert(self, "Login Error", "An error occurred during login: \(error!.localizedDescription)")
                 }
             } else {
-                self.showAlert(with: "Success", message: "You are now logged in!")
+                Validation.showAlert(self, "Success", "You are now logged in!")
                 Validation.defaults.set(email, forKey: "auth")
             }
         })
-    }
-    
-    func showAlert(with title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
     }
 }
 

@@ -34,9 +34,9 @@ class Validation {
         return passwordPred.evaluate(with: password)
     }
     
-    static func showErrorAlert(_ view: UIViewController, _ text: String) {
-        let alert = UIAlertController(title: "Error!", message: text, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        view.present(alert, animated: true)
+    static func showAlert(_ view: UIViewController, _ title: String, _ message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        view.present(alertController, animated: true, completion: nil)
     }
 }

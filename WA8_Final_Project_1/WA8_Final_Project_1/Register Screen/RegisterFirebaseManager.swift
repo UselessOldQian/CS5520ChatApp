@@ -18,13 +18,13 @@ extension RegisterViewController{
         let email = registerView.emailTextField.text
         let password = registerView.passwordTextField.text
         if name?.isEmpty == true || email?.isEmpty == true || password?.isEmpty == true {
-            showAlert(with: "Error", message: "All fields must be filled out.")
+            Validation.showAlert(self, "Error", "All fields must be filled out.")
             self.hideActivityIndicator()
             return
         }
         
         if !isValidEmail(email) {
-            showAlert(with: "Error", message: "Please provide correct email address.")
+            Validation.showAlert(self, "Error","Please provide correct email address.")
             self.hideActivityIndicator()
             return
         }
@@ -75,11 +75,5 @@ extension RegisterViewController{
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
-    }
-    
-    private func showAlert(with title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
     }
 }

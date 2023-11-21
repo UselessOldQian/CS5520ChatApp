@@ -21,9 +21,6 @@ class ChatViewController: UIViewController {
     var friendEmail: String!
     var friendName: String!
     
-    
-    
-    
     override func loadView() {
         view = chatScreen
     }
@@ -33,35 +30,8 @@ class ChatViewController: UIViewController {
         
         //MARK: handling if the Authentication state is changed (sign in, sign out, register)...
         handleAuth = Auth.auth().addStateDidChangeListener{ auth, user in
-            if user == nil{
-                //code omitted...
-                
-            } else{
-                //code omitted...
-                
-                //MARK: Observe Firestore database to display the contacts list...
-//                self.database.collection("users")
-//                    .document((self.currentUser?.email)!)
-//                    .collection("chats")
-//                    .document(self.chatID)
-//                    .collection("messages")
-//                    .addSnapshotListener(includeMetadataChanges: false, listener: {querySnapshot, error in
-//                        if let documents = querySnapshot?.documents{
-//                            self.messages.removeAll()
-//                            for document in documents{
-//                                do{
-//                                    let message  = try document.data(as: Message.self)
-//                                    self.messages.append(message)
-//                                }catch{
-//                                    print(error)
-//                                }
-//                            }
-//                            self.messages.sort(by: {$0.time < $1.time})
-//                            self.chatScreen.tableViewMessages.reloadData()
-//                        }
-//                    })
+            if user != nil{
                 self.getAllMessages(chatID: self.chatID)
-//                self.getAllMessages(chatID: self.chatID)
                 self.scrollToBottom()
             }
         }
@@ -101,19 +71,23 @@ class ChatViewController: UIViewController {
     }
     
     @objc func onButtonAddTapped() {
-        
-        let text = chatScreen.textFieldMessage.text!
-        let sender = (self.selfEmail)!
-        let datetime = Date()
-        let datetimeEpoch = datetime.timeIntervalSince1970
-        let df = DateFormatter()
-        df.dateFormat = "y/MM/dd H:mm a"
-        df.amSymbol = "AM"
-        df.pmSymbol = "PM"
-        let time = df.string(from: datetime)
-        
-        let message = Message(text: text, sender: sender, time: time)
-        saveMessageToFirestore(message: message)
+        if let text = chatScreen.textFieldMessage.text, text.isEmpty {
+            Validation.showAlert(self, "Empty Input", "Message should not be empty.")
+        } else {
+            let text = chatScreen.textFieldMessage.text!
+            let sender = (self.selfEmail)!
+            let datetime = Date()
+            let datetimeEpoch = datetime.timeIntervalSince1970
+            let df = DateFormatter()
+            df.dateFormat = "y/MM/dd H:mm a"
+            df.amSymbol = "AM"
+            df.pmSymbol = "PM"
+            let time = df.string(from: datetime)
+            
+            let message = Message(text: text, sender: sender, time: time)
+            saveMessageToFirestore(message: message)
+            chatScreen.textFieldMessage.text = ""
+        }
         
     }
     
