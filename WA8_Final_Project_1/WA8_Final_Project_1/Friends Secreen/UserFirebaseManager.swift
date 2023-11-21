@@ -9,12 +9,13 @@ import Foundation
 import FirebaseFirestore
 
 extension FriendsViewController{
-    func fetchUserDocumentIDs() {
+    func fetchUserDocumentIDs(completion: @escaping () -> Void) {
         
         let db = Firestore.firestore()
         db.collection("users").getDocuments { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
+                completion()
             } else {
                 self.friends.removeAll()
                 for document in querySnapshot!.documents {
@@ -22,6 +23,7 @@ extension FriendsViewController{
 //                    print("Document ID: \(document.documentID)")
                 }
                 self.friendsScreen.tableViewFriends.reloadData()
+                completion()
             }
         }
     }
@@ -64,6 +66,24 @@ extension FriendsViewController{
                     }
                 }
             }
+        }
+    }
+    
+    func updateFriendsTableNames(emails: [String]) {
+        let group = DispatchGroup()
+        var fetchedNames = [String?](repeating: nil, count: emails.count)
+
+        for (index, email) in emails.enumerated() {
+            group.enter()
+            fetchUserName(byEmail: email) { userName in
+                fetchedNames[index] = userName
+                group.leave()
+            }
+        }
+
+        group.notify(queue: .main) {
+            self.names = fetchedNames.compactMap { $0 } // Remove nils and update names
+            self.friendsScreen.tableViewFriends.reloadData()
         }
     }
     

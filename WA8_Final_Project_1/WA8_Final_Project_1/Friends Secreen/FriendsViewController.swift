@@ -15,14 +15,17 @@ class FriendsViewController: UIViewController {
     
     var friends = [String]()
     
+    var names = [String]()
+    
     override func loadView() {
         view = friendsScreen
     }
     
     override func viewWillAppear(_ animated: Bool) {
 //        friendsScreen.tableViewFriends.reloadData()
-        self.fetchUserDocumentIDs()
-        print("friends: \(friends)")
+        self.fetchUserDocumentIDs() {
+            self.updateFriendsTableNames(emails: self.friends)
+        }
     }
 
     override func viewDidLoad() {
