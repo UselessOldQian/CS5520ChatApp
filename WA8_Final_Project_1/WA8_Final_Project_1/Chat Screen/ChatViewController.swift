@@ -32,7 +32,7 @@ class ChatViewController: UIViewController {
         handleAuth = Auth.auth().addStateDidChangeListener{ auth, user in
             if user != nil{
                 self.getAllMessages(chatID: self.chatID)
-                self.scrollToBottom()
+//                self.scrollToBottom()
             }
         }
     }
@@ -46,6 +46,11 @@ class ChatViewController: UIViewController {
         chatScreen.tableViewMessages.separatorStyle = .none
     
         self.chatScreen.buttonSend.addTarget(self, action: #selector(onButtonAddTapped), for: .touchUpInside)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.scrollToBottom()
     }
 
     func getAllMessages(chatID: String) {
@@ -111,6 +116,8 @@ class ChatViewController: UIViewController {
                             print("Chat's lastMessageID updated successfully")
                         }
                     }
+                    
+                    self.scrollToBottom()
                 }
             }
         } catch let error {
@@ -129,16 +136,6 @@ class ChatViewController: UIViewController {
             let indexPath = IndexPath(row: numberOfRows - 1, section: numberOfSections - 1)
             chatScreen.tableViewMessages.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
-        
-        
-        DispatchQueue.main.async {
-            let numberOfSections = self.chatScreen.tableViewMessages.numberOfSections
-            let numberOfRows = self.chatScreen.tableViewMessages.numberOfRows(inSection: numberOfSections - 1)
-            if numberOfRows > 0 {
-                let indexPath = IndexPath(row: numberOfRows - 1, section: numberOfSections - 1)
-                self.chatScreen.tableViewMessages.scrollToRow(at: indexPath, at: .bottom, animated: false)
-            }
-        }
     }
 }
 
@@ -152,12 +149,14 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
         let message = messages[indexPath.row]
         cell.labelMessage.text = message.text
         cell.labelTime.text = message.time
+        cell.initConstraints()
+        
         if message.sender == selfEmail {
             cell.setSelfConstraint()
         } else {
             cell.setOppoConstraint()
         }
-                
+        
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.clear
         cell.selectedBackgroundView = backgroundView
