@@ -11,17 +11,19 @@ import FirebaseFirestore
 extension ViewController {
     
     func fetchAllReleventChats(userEmail: String) {
-        self.chats.removeAll()
         let db = Firestore.firestore()
         let chatsCollection = db.collection("chats")
 
         let dispatchGroup = DispatchGroup()
 
-        chatsCollection.whereField("friends", arrayContains: userEmail).getDocuments { (snapshot, error) in
+//        chatsCollection.whereField("friends", arrayContains: userEmail).getDocuments { (snapshot, error) in
+        chatsCollection.whereField("friends", arrayContains: userEmail).addSnapshotListener { (snapshot, error) in
             guard let documents = snapshot?.documents, error == nil else {
                 print("Error fetching chats: \(error?.localizedDescription ?? "Unknown error")")
                 return
             }
+            
+            self.chats.removeAll()
 
             for document in documents {
                 var chat = try? document.data(as: Chat.self)

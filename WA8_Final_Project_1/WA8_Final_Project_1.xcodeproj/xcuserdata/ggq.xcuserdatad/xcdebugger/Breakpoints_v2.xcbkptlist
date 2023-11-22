@@ -343,54 +343,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "95E0256E-5A8C-48C6-A953-DE80571F50E4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "95E0256E-5A8C-48C6-A953-DE80571F50E4 - be0d7c145fda7237"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WA8_Final_Project_1.ViewController.fetchAllReleventChats(userEmail: Swift.String) -&gt; ()"
-                  moduleName = "WA8_Final_Project_1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Main%20Screen/FirebaseManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "95E0256E-5A8C-48C6-A953-DE80571F50E4 - be0d7c145fda7237"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WA8_Final_Project_1.ViewController.fetchAllReleventChats(userEmail: Swift.String) -&gt; ()"
-                  moduleName = "WA8_Final_Project_1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Main%20Screen/FirebaseManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "204">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "FD96A80F-E679-4B55-B271-70941EE4C08C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -398,8 +350,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -461,8 +413,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -509,8 +461,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -587,8 +539,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -635,8 +587,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "ViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -669,7 +621,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
             endingLineNumber = "63"
-            landmarkName = "viewWillAppear(_:)"
+            landmarkName = "getAllMessages(chatID:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -749,7 +701,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
-            landmarkName = "onButtonAddTapped()"
+            landmarkName = "saveMessageToFirestore(message:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -765,7 +717,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
             endingLineNumber = "121"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -781,7 +733,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
             endingLineNumber = "129"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -797,7 +749,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "130"
             endingLineNumber = "130"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -813,7 +765,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
             endingLineNumber = "132"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -829,7 +781,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
             endingLineNumber = "138"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -845,7 +797,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -859,8 +811,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -952,8 +904,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1015,8 +967,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1063,8 +1015,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1111,8 +1063,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1127,8 +1079,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1175,8 +1127,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1223,8 +1175,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1239,8 +1191,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1287,8 +1239,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1303,8 +1255,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1319,8 +1271,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1335,8 +1287,8 @@
             filePath = "WA8_Final_Project_1/Main Screen/FirebaseManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "fetchAllReleventChats(userEmail:)"
             landmarkType = "7">
             <Locations>
@@ -1479,7 +1431,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
             endingLineNumber = "122"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1495,7 +1447,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
             endingLineNumber = "135"
-            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkName = "scrollToBottom()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
