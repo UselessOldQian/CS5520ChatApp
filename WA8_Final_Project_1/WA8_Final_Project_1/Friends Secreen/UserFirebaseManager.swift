@@ -54,15 +54,15 @@ extension FriendsViewController{
             } else {
                 // No such chat exists, create a new one
                 let newChatData: [String: Any] = ["friends": [userEmailA, userEmailB]]
-                chatsCollection.addDocument(data: newChatData) { err in
+                chatsCollection.document(userEmailA+":"+userEmailB).setData(newChatData) { err in
                     if let err = err {
                         print("Error adding chat document: \(err)")
                         completion(nil)  // Return nil on error
                     } else {
                         // Return the newly created document ID
                         print("New chat document created")
-                        chatsCollection.document().documentID
-                        completion(chatsCollection.document().documentID)
+//                        chatsCollection.document().documentID
+                        completion(userEmailA+":"+userEmailB)
                     }
                 }
             }

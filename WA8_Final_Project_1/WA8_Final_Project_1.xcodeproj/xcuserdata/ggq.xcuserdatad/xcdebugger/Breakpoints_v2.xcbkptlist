@@ -192,7 +192,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "fetchUserDocumentIDs()"
+            landmarkName = "fetchUserDocumentIDs(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -208,7 +208,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "fetchUserDocumentIDs()"
+            landmarkName = "fetchUserDocumentIDs(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -224,7 +224,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "fetchUserDocumentIDs()"
+            landmarkName = "fetchUserDocumentIDs(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -304,8 +304,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
+            landmarkName = "FriendsViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "337F4DC5-058B-4C33-AA26-BD9041EEA4AB - 551698501e863a5c"
@@ -352,8 +352,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "95E0256E-5A8C-48C6-A953-DE80571F50E4 - be0d7c145fda7237"
@@ -400,8 +400,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "FD96A80F-E679-4B55-B271-70941EE4C08C - 5516cc1c245544ed"
@@ -463,8 +463,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "10B292D7-CA0E-42ED-A744-C5A63A51C63A - 5516cc1c245547c4"
@@ -511,8 +511,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
             endingLineNumber = "61"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "BB6A62E4-E3A0-4288-B8B1-9ECFCC3C287C - fcb25345e58b300d"
@@ -589,8 +589,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "D5CC311E-5525-49D0-97B8-37CEEE75E071 - fcb25345e58b30ec"
@@ -653,7 +653,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
-            landmarkName = "viewWillAppear(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -861,8 +861,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "240CAF03-3786-46B7-9C3A-A4F48B682F6E - 5516cc1c24554440"
@@ -954,8 +954,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "5E78B031-626C-4C9B-A5DA-48277D53677A - 5516cc1c245547e5"
@@ -1017,8 +1017,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "4234982D-B786-4925-9490-D40A4A4D0ED4 - 5516cc1c245547e5"
@@ -1065,8 +1065,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "BF2FA780-F0CE-421D-8E17-AB53D3083DF3 - 5516cc1c245547c4"
@@ -1113,8 +1113,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1129,8 +1129,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "79562090-2855-447B-B578-A48B87A18A83 - 41c955184a96b4c2"
@@ -1177,8 +1177,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "19E0C451-1C8C-46AB-994C-6687A0DB0225 - 41c955184a96b523"
@@ -1225,8 +1225,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1241,8 +1241,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "E71F9D2C-0E4D-4370-A668-92CA136D2F92 - 41c955184a96b54e"
@@ -1289,8 +1289,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1305,8 +1305,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1321,8 +1321,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1337,8 +1337,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            landmarkName = "fetchAllReleventChats(userEmail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "DDD2DE23-2F06-44C7-A4C7-744DD2CF222E - 41c955184a96b5ca"
@@ -1384,8 +1384,182 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "fetchAllReleventChats(userEmail:)"
+            endingLineNumber = "119">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8701B391-C767-4646-964D-71464F43C069"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/FriendsTableViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8701B391-C767-4646-964D-71464F43C069 - 3ff4aec1c92a8685"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in WA8_Final_Project_1.FriendsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "WA8_Final_Project_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Friends%20Secreen/FriendsTableViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1426">
+               </Location>
+               <Location
+                  uuid = "8701B391-C767-4646-964D-71464F43C069 - b8e48cdf4c48c069"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in WA8_Final_Project_1.FriendsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "WA8_Final_Project_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ggq/Desktop/CS5520/CS5520ChatApp/WA8_Final_Project_1/WA8_Final_Project_1/Friends%20Secreen/FriendsTableViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "97">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F2FCF7E-D3C2-48DB-B999-57B7DE6108CA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/FriendsTableViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B668D98-A364-4927-B29A-2A767F0890F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/FriendsTableViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C865338-DF7B-4B5E-9579-A3D5603CCD2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Chat Screen/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE5E43E2-7E41-41BE-A2E4-0F63F30CA741"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Chat Screen/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "saveMessageToFirestore(message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F54FCDC8-8050-41B5-9AF1-6BFF6ED12691"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "checkOrCreateChat(userEmailA:userEmailB:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C1210BD-F698-44B5-9D9E-E9B2342C7564"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "checkOrCreateChat(userEmailA:userEmailB:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7DB54B5-BEC0-4184-AFBD-F7A843C7E20C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "checkOrCreateChat(userEmailA:userEmailB:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF5C61E8-95E6-4ED9-B245-D075EFC21DB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WA8_Final_Project_1/Friends Secreen/UserFirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "checkOrCreateChat(userEmailA:userEmailB:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
