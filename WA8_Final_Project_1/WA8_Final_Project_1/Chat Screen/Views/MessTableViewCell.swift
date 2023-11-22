@@ -77,28 +77,10 @@ class MessagesTableViewCell: UITableViewCell {
     
     func setSelfConstraint() {
         wrapperCellView.backgroundColor = UIColor(red: 0.29, green: 0.80, blue: 0.47, alpha: 1.0)
-
-//        NSLayoutConstraint.activate([
-//            labelTime.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-//
-//            wrapperCellView.widthAnchor.constraint(equalTo: labelMessage.widthAnchor, constant: 16),
-//            wrapperCellView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-//
-//            labelMessage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -18),
-//        ])
     }
     
     func setOppoConstraint() {
         wrapperCellView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
-
-//        NSLayoutConstraint.activate([
-//            labelTime.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-//
-//            wrapperCellView.widthAnchor.constraint(equalTo: labelMessage.widthAnchor, constant: 16),
-//            wrapperCellView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-//
-//            labelMessage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 18),
-//        ])
     }
     
     
